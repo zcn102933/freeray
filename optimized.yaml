@@ -5,475 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU 7, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: IN 8, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 17, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 17eacddf-0000-47dc-afe9-a52367225b84, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: US 19, server: 1chuan.top, port: 443, type: vmess, uuid: fa8f90e0-2fae-4b05-df7a-ea325bc517d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /evo, ws-headers: {Host: 1chuan.top}, udp: true}
-  - {name: US 24, server: 1.v2tk.tk, port: 443, type: vmess, uuid: f0e10fe1-b01d-4ecc-9fcc-550badc7d1f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /upload, ws-headers: {Host: 1.v2tk.tk}, udp: true}
   - {name: AU 28, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: AU 29, server: au.project4gyuna.pw, port: 80, type: vmess, uuid: 0613c82b-1f56-432f-b94b-691e294d2314, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /project4gyuna.pw, ws-headers: {Host: au.project4gyuna.pw}, udp: true}
-  - {name: US 40, server: v1.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: UN 45, server: rackedgeuk510.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rackedgeuk510.moonfree.top}, udp: true}
-  - {name: JP 46, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: SG 47, server: 129.226.216.4, port: 35562, type: vmess, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 59, server: hk.xxnmsl.com, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.xxnmsl.com}, udp: true}
   - {name: AU 60, server: 212.81.47.17, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: AU 61, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: CN 67, server: cn.zzv02.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv02.infonode.xyz}, udp: true}
-  - {name: AU 70, server: neteasy.ga, port: 28931, type: trojan, password: MnROfwtPYa, sni: neteasy.ga, skip-cert-verify: true, udp: true}
-  - {name: SG 72, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG 82, server: 129.226.94.134, port: 31149, type: vmess, uuid: 883557f2-88c9-4963-bd0e-2083353f7901, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 94, server: iplc.wenxuedianzishu.xyz, port: 10101, type: vmess, uuid: b76e8ec5-f6ce-34d4-8416-99b9c1cb0b8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 111, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 119, server: sg01.czsx1624.tk, port: 443, type: vmess, uuid: d002b422-eace-4e01-bf58-e4bb0bcfe7af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /3a8545177/, ws-headers: {Host: sg01.czsx1624.tk}, udp: true}
-  - {name: FR 123, server: 51.210.179.47, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG 124, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: HK 133, server: gy01.20220512.cyou, port: 34567, type: trojan, password: 7ed7b710-d331-43df-8e37-a1d330409ed2, sni: gy01.20220512.cyou, skip-cert-verify: true, udp: true}
+  - {name: AU 6, server: 212.81.47.13, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU 158, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: CN 439, server: gtm-sg-6wr2na7z604.gtm-i1d9.com, port: 47027, type: vmess, uuid: 537d2227-c9ee-3d2b-808a-fd7f0d0c07af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: gtm-sg-6wr2na7z604.gtm-i1d9.com}, udp: true}
   - {name: HK 149, server: az.gunangzhui.cloud, port: 41534, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: az.gunangzhui.cloud, skip-cert-verify: true, udp: true}
   - {name: JP 162, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: AU 164, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: AU 178, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: AU 185, server: 212.81.47.14, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: JP 193, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ocrb1.moonfree.top}, udp: true}
-  - {name: HK 194, server: azhk.102498.eu.org, port: 23941, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloworld, ws-headers: {Host: azhk.102498.eu.org}, udp: true}
-  - {name: US 198, server: rk59.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rk59.moonfree.top}, udp: true}
-  - {name: UN 200, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v6d1.moonfree.top}, udp: true}
-  - {name: DE 201, server: 213.226.71.209, port: 31251, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 202, server: ruvds.testx.eu.org, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vmess-share/?ed=2048", ws-headers: {Host: ruvds.testx.eu.org}, udp: true}
-  - {name: CN 207, server: 116.162.33.235, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 116.162.33.235}, udp: true}
-  - {name: CN 209, server: 116.162.33.235, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 116.162.33.235}, udp: true}
-  - {name: CN 215, server: cn.zzv01.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}, udp: true}
-  - {name: CN 217, server: cn.zzv01.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}, udp: true}
-  - {name: CN 218, server: 116.162.33.235, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 116.162.33.235}, udp: true}
-  - {name: CN 219, server: cn.zzv02.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv02.infonode.xyz}, udp: true}
-  - {name: CN 222, server: cn.zzv12.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv12.infonode.xyz}, udp: true}
-  - {name: CN 223, server: cn.zzv07.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv07.infonode.xyz}, udp: true}
-  - {name: UN 241, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 4b416ebb-53a5-4d72-8bda-345c25934cd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: SG 242, server: 129.226.94.134, port: 31149, type: vmess, uuid: 883557f2-88c9-4963-bd0e-2083353f7901, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SE 246, server: se2.project4gyuna.pw, port: 80, type: vmess, uuid: 0613c82b-1f56-432f-b94b-691e294d2314, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /project4gyuna.pw, ws-headers: {Host: se2.project4gyuna.pw}, udp: true}
-  - {name: SG 254, server: 129.226.216.160, port: 49056, type: vmess, uuid: 89d7f316-c0d4-47f2-c6d3-fd9f37c11c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 255, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 278, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, sni: silicon.starspace.link, skip-cert-verify: true, udp: true}
-  - {name: FR 280, server: 51.210.179.47, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 282, server: 45.61.174.36, port: 31325, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG 284, server: 146.19.196.125, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 317, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr1t.moonfree.top}, udp: true}
-  - {name: US 336, server: oz.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
-  - {name: CN 425, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 427, server: 150.230.4.136, port: 11151, type: vmess, uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 823, server: hk.zzk8.me, port: 51007, type: trojan, password: 3d4452a6-4d29-4f62-8a35-1290ca2fdcdc, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
   - {name: UN 430, server: sfo1.nuker.biz, port: 443, type: vmess, uuid: 21370ba3-a7de-4aeb-b3f7-5b22f96d7453, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sfo1.nuker.biz}, udp: true}
-  - {name: CN 439, server: gtm-sg-6wr2na7z604.gtm-i1d9.com, port: 47027, type: vmess, uuid: 537d2227-c9ee-3d2b-808a-fd7f0d0c07af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: gtm-sg-6wr2na7z604.gtm-i1d9.com}, udp: true}
-  - {name: CN 443, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 444, server: 129.226.216.4, port: 35562, type: vmess, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 459, server: 146.56.108.108, port: 26113, type: vmess, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 461, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 473, server: 129.226.216.160, port: 49056, type: vmess, uuid: 89d7f316-c0d4-47f2-c6d3-fd9f37c11c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 474, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: UN 477, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 556b20c1-272e-44ec-881b-94f410ac75de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: CN 480, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 481, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 497, server: 129.226.95.143, port: 45381, type: vmess, uuid: cd2a260c-f244-4e12-83c3-8a259cf29fc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 504, server: 146.56.108.108, port: 26113, type: vmess, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 505, server: 129.226.216.160, port: 49056, type: vmess, uuid: 89d7f316-c0d4-47f2-c6d3-fd9f37c11c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 510, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 522, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 527, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 530, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 539, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 558, server: bgpv2.ktyjsq.com, port: 12222, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 561, server: cn.zzv01.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv01.infonode.xyz}, udp: true}
-  - {name: JP 563, server: sh.moonfree.top, port: 11263, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sh.moonfree.top}, udp: true}
-  - {name: SG 572, server: 129.226.95.143, port: 45381, type: vmess, uuid: cd2a260c-f244-4e12-83c3-8a259cf29fc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 575, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: eeecea9e-c1d4-4717-ba60-972684e3cfa4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ocrb1.moonfree.top}, udp: true}
-  - {name: KR 579, server: 152.70.234.70, port: 26701, type: vmess, uuid: 05f824f3-4724-4344-b26b-9edd602874bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 581, server: cn.zzv05.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: cn.zzv05.infonode.xyz}, udp: true}
-  - {name: CN 585, server: bgpv2.ktyjsq.com, port: 12222, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 586, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 587, server: liumin.cf, port: 443, type: vmess, uuid: 5a6e82d9-7c95-17a0-a503-bca5806bd6f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ddrkvideovws, ws-headers: {Host: liumin.cf}, udp: true}
-  - {name: KR 589, server: 146.56.108.108, port: 26113, type: vmess, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB 681, server: 45.61.173.125, port: 31224, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: KR 699, server: kr.azure.fnyun.cyou, port: 36443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr.azure.fnyun.cyou}, udp: true}
-  - {name: SG 710, server: sg.azure.fnyun.cyou, port: 46443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg.azure.fnyun.cyou}, udp: true}
-  - {name: CN 810, server: yza2.hkbgp.wiki, port: 10345, type: vmess, uuid: 929b1c1e-268b-4993-a83c-56782598a223, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /onefall, ws-headers: {Host: yza2.hkbgp.wiki}, udp: true}
-  - {name: US 824, server: hk.zzk8.me, port: 51008, type: trojan, password: 3d4452a6-4d29-4f62-8a35-1290ca2fdcdc, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: US 825, server: hk.zzk8.me, port: 51005, type: trojan, password: 3d4452a6-4d29-4f62-8a35-1290ca2fdcdc, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: HK 853, server: 20.24.193.43, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.24.193.43}, udp: true}
-  - {name: CN 861, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 879, server: 129.226.95.143, port: 45381, type: vmess, uuid: cd2a260c-f244-4e12-83c3-8a259cf29fc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 897, server: 129.226.216.4, port: 35562, type: vmess, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 900, server: 129.226.94.134, port: 31149, type: vmess, uuid: 883557f2-88c9-4963-bd0e-2083353f7901, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 921, server: 129.226.216.160, port: 49056, type: vmess, uuid: 89d7f316-c0d4-47f2-c6d3-fd9f37c11c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 963, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, sni: jgwcc1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: HK 1030, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8a76fb13/, ws-headers: {Host: yyyy.wwwbhjy.com}, udp: true}
-  - {name: JP 1112, server: 0a39e00.pc.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pc.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP 1113, server: 5fc3d08.pd.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pd.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: CN 1190, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 1194, server: hk.zzk8.me, port: 51005, type: trojan, password: b9aeaaa9-8817-40d6-8936-84fa5581fe14, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: SG 1226, server: 129.226.216.4, port: 35562, type: vmess, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 1229, server: 129.226.94.134, port: 31149, type: vmess, uuid: 883557f2-88c9-4963-bd0e-2083353f7901, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG 1233, server: 129.226.216.121, port: 49381, type: vmess, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 1271, server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place, port: 8210, type: vmess, uuid: a6dd6851-92ed-3b76-ab58-1f95310d8183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place}, udp: true}
-  - {name: KR 1296, server: 146.56.108.108, port: 26113, type: vmess, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 1322, server: usa003.369boy.com, port: 13011, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, sni: usa003.369boy.com, skip-cert-verify: true, udp: true}
-  - {name: JP 1327, server: jp2.jjzgy.live, port: 443, type: trojan, password: f10d81d8-ad4b-300a-825b-f54f515bd06e, sni: jp2.jjzgy.live, skip-cert-verify: true, udp: true}
   - {name: US 1333, server: a.nmc168.ml, port: 2235, type: vmess, uuid: 8b821eef-40a8-46c9-e3f9-a3b01e671b6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 1334, server: hk004.369boy.com, port: 34502, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, sni: hk004.369boy.com, skip-cert-verify: true, udp: true}
+  - {name: US 825, server: hk.zzk8.me, port: 51005, type: trojan, password: 3d4452a6-4d29-4f62-8a35-1290ca2fdcdc, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: US 824, server: hk.zzk8.me, port: 51008, type: trojan, password: 3d4452a6-4d29-4f62-8a35-1290ca2fdcdc, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: US 317, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr1t.moonfree.top}, udp: true}
+  - {name: AU 5, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: US 587, server: liumin.cf, port: 443, type: vmess, uuid: 5a6e82d9-7c95-17a0-a503-bca5806bd6f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ddrkvideovws, ws-headers: {Host: liumin.cf}, udp: true}
+  - {name: AU 61, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: US 452, server: gcfree.galaxy-cloud.icu, port: 443, type: vmess, uuid: 3f0613b2-fbff-4aa1-8731-3e13f0d6992d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /UAVwoa, ws-headers: {Host: gcfree.galaxy-cloud.icu}, udp: true}
+  - {name: US 1194, server: hk.zzk8.me, port: 51005, type: trojan, password: b9aeaaa9-8817-40d6-8936-84fa5581fe14, sni: hk.zzk8.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -492,119 +112,24 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -615,356 +140,71 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -980,119 +220,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU 7
-      - IN 8
-      - US 17
-      - US 19
-      - US 24
       - AU 28
-      - AU 29
-      - US 40
-      - UN 45
-      - JP 46
-      - SG 47
-      - HK 59
       - AU 60
-      - AU 61
-      - CN 67
-      - AU 70
-      - SG 72
-      - SG 82
-      - CN 94
-      - CN 111
-      - US 119
-      - FR 123
-      - SG 124
-      - HK 133
+      - AU 6
+      - AU 158
+      - CN 439
       - HK 149
       - JP 162
-      - AU 164
-      - AU 178
-      - AU 185
-      - JP 193
-      - HK 194
-      - US 198
-      - UN 200
-      - DE 201
-      - US 202
-      - CN 207
-      - CN 209
-      - CN 215
-      - CN 217
-      - CN 218
-      - CN 219
-      - CN 222
-      - CN 223
-      - UN 241
-      - SG 242
-      - SE 246
-      - SG 254
-      - US 255
-      - US 278
-      - FR 280
-      - US 282
-      - SG 284
-      - US 317
-      - US 336
-      - CN 425
-      - JP 427
+      - US 823
       - UN 430
-      - CN 439
-      - CN 443
-      - SG 444
-      - KR 459
-      - CN 461
-      - SG 473
-      - CN 474
-      - UN 477
-      - CN 480
-      - CN 481
-      - SG 497
-      - KR 504
-      - SG 505
-      - CN 510
-      - CN 522
-      - CN 527
-      - CN 530
-      - CN 539
-      - CN 558
-      - CN 561
-      - JP 563
-      - SG 572
-      - JP 575
-      - KR 579
-      - CN 581
-      - CN 585
-      - CN 586
-      - US 587
-      - KR 589
-      - GB 681
-      - KR 699
-      - SG 710
-      - CN 810
-      - US 824
-      - US 825
-      - HK 853
-      - CN 861
-      - SG 879
-      - SG 897
-      - SG 900
-      - SG 921
-      - KR 963
-      - HK 1030
-      - JP 1112
-      - JP 1113
-      - CN 1190
-      - US 1194
-      - SG 1226
-      - SG 1229
-      - SG 1233
-      - CN 1271
-      - KR 1296
-      - US 1322
-      - JP 1327
       - US 1333
-      - HK 1334
+      - US 825
+      - US 824
+      - US 317
+      - AU 5
+      - US 587
+      - AU 61
+      - US 452
+      - US 1194
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
