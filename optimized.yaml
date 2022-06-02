@@ -5,119 +5,315 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: US_7, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, sni: wireless.starspace.link, skip-cert-verify: true, udp: true}
+  - {name: IN_14, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: HK_39, server: az.gunangzhui.cloud, port: 12716, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: az.gunangzhui.cloud, skip-cert-verify: true, udp: true}
-  - {name: JP_35, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: TW_74, server: yqy2351.china-cdn-net.com, port: 2351, type: trojan, password: ab048302-7224-3e63-96bd-dbde4dfd6afd, sni: yqy2351.china-cdn-net.com, skip-cert-verify: true, udp: true}
+  - {name: TW_112, server: 331tw9.fans8.xyz, port: 443, type: trojan, password: dfa2821d-0418-4427-8f17-cef26d02370f, sni: 331tw9.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_76, server: sh.moonfree.top, port: 11262, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sh.moonfree.top}, udp: true}
+  - {name: CN_153, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Unknown_144, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 556b20c1-272e-44ec-881b-94f410ac75de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: US_190, server: u4.anmu.one, port: 16166, type: vmess, uuid: 8228550e-7f53-4809-8cb1-5f9420380d13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_149, server: u4.anmu.one, port: 16166, type: vmess, uuid: 8228550e-7f53-4809-8cb1-5f9420380d13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_154, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 17eacddf-0000-47dc-afe9-a52367225b84, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: JP_92, server: jp.azure.fnyun.cyou, port: 26443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp.azure.fnyun.cyou}, udp: true}
+  - {name: Unknown_117, server: v4.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v4.ssrsub.com}, udp: true}
+  - {name: HK_84, server: hk.azure.fnyun.cyou, port: 16443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.azure.fnyun.cyou}, udp: true}
+  - {name: SG_99, server: sg.azure.fnyun.cyou, port: 46443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sg.azure.fnyun.cyou}, udp: true}
+  - {name: Unknown_56, server: rackedgeuk510.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rackedgeuk510.moonfree.top}, udp: true}
+  - {name: AU_8, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: SG_23, server: 103.172.116.87, port: 31244, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: AU_46, server: au.project4gyuna.pw, port: 80, type: vmess, uuid: 0613c82b-1f56-432f-b94b-691e294d2314, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /project4gyuna.pw, ws-headers: {Host: au.project4gyuna.pw}, udp: true}
+  - {name: JP_53, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ocrb1.moonfree.top}, udp: true}
+  - {name: Unknown_61, server: v5.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v5.ssrsub.com}, udp: true}
+  - {name: AU_65, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: US_73, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, sni: silicon.starspace.link, skip-cert-verify: true, udp: true}
+  - {name: FR_75, server: 51.210.179.47, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: US_77, server: 45.61.174.36, port: 31325, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Unknown_129, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v6d1.moonfree.top}, udp: true}
+  - {name: KR_88, server: kr.azure.fnyun.cyou, port: 36443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr.azure.fnyun.cyou}, udp: true}
+  - {name: SG_131, server: tx49sg.fans8.xyz, port: 443, type: trojan, password: dfa2821d-0418-4427-8f17-cef26d02370f, sni: tx49sg.fans8.xyz, skip-cert-verify: true, udp: true}
   - {name: US_141, server: rk59.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rk59.moonfree.top}, udp: true}
   - {name: Unknown_180, server: v2.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v2.ssrsub.com}, udp: true}
   - {name: US_186, server: v1.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: SG_218, server: 129.226.93.161, port: 40236, type: vmess, uuid: 931416fe-98f2-4098-c8e7-3634e27ce6f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: SG_224, server: 129.226.217.153, port: 15184, type: vmess, uuid: bb02fa5b-1d15-46f4-fa47-053c6db61e39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: GB_228, server: 45.61.173.125, port: 31224, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: AU_7, server: 212.81.47.13, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: US_44, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: lsj02.wangxd.life, skip-cert-verify: true, udp: true}
-  - {name: AU_67, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: AU_114, server: 152.67.102.225, port: 46360, type: vmess, uuid: 61fe4d4e-8c7e-4f2e-9b9f-49f38991be7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_116, server: 129.226.94.31, port: 21509, type: vmess, uuid: fbeb626c-8095-4e3b-aaf6-5a57971955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_120, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: SG_137, server: 129.226.217.153, port: 15184, type: vmess, uuid: bb02fa5b-1d15-46f4-fa47-053c6db61e39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_168, server: u2.anmu.one, port: 16161, type: vmess, uuid: 919ac815-1776-47fe-8b54-508ef4f39421, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: HK_225, server: d01.v2.gay, port: 23873, type: vmess, uuid: 143e2134-ca7d-46ff-e902-37d0967b9907, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_230, server: 150.230.4.136, port: 11151, type: vmess, uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_232, server: zk518.tk, port: 8443, type: trojan, password: zhang1990, sni: zk518.tk, skip-cert-verify: true, udp: true}
-  - {name: SG_237, server: 129.226.94.247, port: 15301, type: vmess, uuid: 16844453-6154-4808-bdda-a26741ebe677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_238, server: 129.226.94.145, port: 51848, type: vmess, uuid: ad4757f1-e28c-47b8-970c-51b232c653d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AU_8 2, server: 212.81.47.13, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: US_26, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Unknown_27, server: awsxjp.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: awsxjp.moonfree.top}, udp: true}
+  - {name: Unknown_41, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 4b416ebb-53a5-4d72-8bda-345c25934cd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: SG_42, server: 129.226.94.134, port: 31149, type: vmess, uuid: 883557f2-88c9-4963-bd0e-2083353f7901, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: IN_62, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_68, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: lsj02.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: AU_72, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: AU_73, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: AU_75, server: 212.81.47.17, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: CN_84, server: 32e3a78.pa.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP_85, server: 12345678jp.158801.xyz, port: 80, type: vmess, uuid: 336ecc0a-8e8d-4ddc-a4e6-e2fcadaa2987, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /images, ws-headers: {Host: 12345678jp.158801.xyz}, udp: true}
+  - {name: CN_86, server: 5fc3d08.gc.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_87, server: c0fd425.ga.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_88, server: c0fd425.gc.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_89, server: 32e3a78.ga.gladns.com, port: 3384, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_90, server: 5fc3d08.ga.gladns.com, port: 3382, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_91, server: 5fc3d08.pg.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pg.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_92, server: 32e3a78.pc.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW_93, server: c0fd425.pd.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_94, server: 5fc3d08.gb.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_95, server: 5fc3d08.ga.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_96, server: 5fc3d08.gc.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_97, server: 0a39e00.gb.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_98, server: 5fc3d08.gb.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: HK_99, server: c0fd425.pa.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pa.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_100, server: 0a39e00.ga.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_102, server: 5fc3d08.pe.gladns.com, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.pe.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_103, server: 0a39e00.gc.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: JP_104, server: 0a39e00.pd.gladns.com, port: 3389, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.pd.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_106, server: 5fc3d08.ga.gladns.com, port: 3385, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_107, server: c0fd425.ga.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_109, server: 5fc3d08.gc.gladns.com, port: 3384, type: trojan, password: ffec9f6ea19e1dd1, sni: 5fc3d08.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW_110, server: c0fd425.pi.gladns.com, port: 3389, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.pi.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_111, server: 0a39e00.ga.gladns.com, port: 3385, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_112, server: 0a39e00.gb.gladns.com, port: 3384, type: trojan, password: d66013c645b93c5c, sni: 0a39e00.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_113, server: 32e3a78.ga.gladns.com, port: 3385, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.ga.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_114, server: c0fd425.gb.gladns.com, port: 3385, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gb.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_115, server: 32e3a78.pg.gladns.com, port: 3389, type: trojan, password: ca4596fb9bc63cf2, sni: 32e3a78.pg.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: CN_116, server: c0fd425.gc.gladns.com, port: 3384, type: trojan, password: 711aabc21e45ae31, sni: c0fd425.gc.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: US_180, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: SG_197, server: 129.226.217.153, port: 15184, type: vmess, uuid: bb02fa5b-1d15-46f4-fa47-053c6db61e39, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,30 +332,79 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -170,89 +415,236 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -268,30 +660,79 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - US_7
+      - IN_14
       - HK_39
-      - JP_35
-      - TW_74
+      - TW_112
+      - JP_76
+      - CN_153
+      - Unknown_144
+      - US_190
+      - US_149
+      - US_154
+      - JP_92
+      - Unknown_117
+      - HK_84
+      - SG_99
+      - Unknown_56
+      - AU_8
+      - SG_23
+      - AU_46
+      - JP_53
+      - Unknown_61
+      - AU_65
+      - US_73
+      - FR_75
       - US_77
-      - Unknown_129
+      - KR_88
+      - SG_131
       - US_141
       - Unknown_180
       - US_186
-      - SG_218
       - SG_224
       - GB_228
-      - AU_7
-      - US_44
-      - AU_67
-      - AU_114
-      - SG_116
-      - US_120
-      - SG_137
-      - US_168
-      - HK_225
-      - JP_230
-      - KR_232
-      - SG_237
-      - SG_238
+      - AU_8 2
+      - US_26
+      - Unknown_27
+      - Unknown_41
+      - SG_42
+      - IN_62
+      - US_68
+      - AU_72
+      - AU_73
+      - AU_75
+      - CN_84
+      - JP_85
+      - CN_86
+      - CN_87
+      - CN_88
+      - CN_89
+      - CN_90
+      - CN_91
+      - CN_92
+      - TW_93
+      - CN_94
+      - CN_95
+      - CN_96
+      - CN_97
+      - CN_98
+      - HK_99
+      - CN_100
+      - CN_102
+      - CN_103
+      - JP_104
+      - CN_106
+      - CN_107
+      - CN_109
+      - TW_110
+      - CN_111
+      - CN_112
+      - CN_113
+      - CN_114
+      - CN_115
+      - CN_116
+      - US_180
+      - SG_197
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
