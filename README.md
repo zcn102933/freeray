@@ -17,7 +17,7 @@
 > mirror④：https://raw.github.qqcn.xyz/daycat/freeray/main/optimized.yaml
 
 # 全部节点
-全部未经测试的节点，敏感期可以整点留着，面的失联。不建议日常使用，除非你想测试一下你手机/电脑的性能。    
+全部未经测试的节点，敏感期可以整点留着，免的失联。不建议日常使用，除非你想测试一下你手机/电脑的性能。    
 
 一键导入 Clash: 点击[这里](https://v1.mk/lI8iK7a)       
 一键导入 Clash 2: 点击[这里](https://v1.mk/mgen9it)
