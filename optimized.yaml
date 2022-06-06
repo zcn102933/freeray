@@ -5,279 +5,431 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 778, server: csltv.bdpyyds.top, port: 44444, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: csltv.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 722, server: twb.bdpyyds.top, port: 15001, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: twb.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 1266, server: 116.129.254.65, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: CN 1246, server: 116.129.254.78, port: 63086, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.78}, udp: true}
-  - {name: CN 724, server: twb.bdpyyds.top, port: 32002, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: twb.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 731, server: teshu.bdpyyds.top, port: 26007, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 725, server: teshu.bdpyyds.top, port: 26005, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 1274, server: 116.129.254.65, port: 63088, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: CN 1131, server: 116.129.254.65, port: 63086, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: AU 96, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 771, server: gzydhkt.bdpyyds.top, port: 22748, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: gzydhkt.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 772, server: gzydhkt.bdpyyds.top, port: 22747, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: gzydhkt.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 737, server: csltv.bdpyyds.top, port: 51005, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: csltv.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: HK 878, server: cscs.356930.xyz, port: 10021, type: vmess, uuid: 7ddb2159-b252-4563-ada2-b928ff4c3a87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: cscs.356930.xyz}, udp: true}
-  - {name: US 876, server: dojjs.356930.xyz, port: 10021, type: vmess, uuid: 7ddb2159-b252-4563-ada2-b928ff4c3a87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: dojjs.356930.xyz}, udp: true}
-  - {name: CN 1271, server: 223.166.129.29, port: 63078, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.129.29}, udp: true}
-  - {name: CN 747, server: csltv.bdpyyds.top, port: 53001, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: csltv.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 759, server: teshu.bdpyyds.top, port: 26009, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: US 1076, server: 20.247.112.250, port: 80, type: vmess, uuid: 3fba2718-a86e-4e71-a4a9-99e70039ea0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.247.112.250}, udp: true}
-  - {name: KR 879, server: jgwcc.356930.xyz, port: 10021, type: vmess, uuid: 7ddb2159-b252-4563-ada2-b928ff4c3a87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: jgwcc.356930.xyz}, udp: true}
-  - {name: CN 1250, server: 116.129.254.65, port: 63051, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: CN 396, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: HK 479, server: hk4.ningmengshui.xyz, port: 80, type: vmess, uuid: 8f4832f7-a51b-4049-9060-0422c3223e76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk4.ningmengshui.xyz}, udp: true}
-  - {name: CN 1150, server: 116.129.254.78, port: 63088, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.78}, udp: true}
-  - {name: CN 720, server: cm-jm.okvpn.xyz, port: 20004, type: trojan, password: 920bab6b-c9e2-440e-b18b-d39ab09926cb, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 1251, server: 116.129.254.65, port: 63069, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: CH 101, server: 185.126.116.125, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: SG 877, server: doxjp.356930.xyz, port: 10021, type: vmess, uuid: 7ddb2159-b252-4563-ada2-b928ff4c3a87, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: doxjp.356930.xyz}, udp: true}
-  - {name: US 62, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
-  - {name: CN 721, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: 920bab6b-c9e2-440e-b18b-d39ab09926cb, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 1121, server: 116.129.254.78, port: 63051, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: 116.129.254.78}, udp: true}
-  - {name: CN 772 2, server: teshu.bdpyyds.top, port: 26010, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 1255, server: 159.27.115.21, port: 63078, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
-  - {name: HK 1063, server: 20.239.180.220, port: 12377, type: trojan, password: 4c6c0021-2068-4b53-a8eb-329e4bf5c5e2, skip-cert-verify: true, udp: true}
-  - {name: CN 729, server: hkc.bdpyyds.top, port: 13131, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: hkc.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 726, server: hkc.bdpyyds.top, port: 14444, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: hkc.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 757, server: teshu.bdpyyds.top, port: 26001, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 791, server: twb.bdpyyds.top, port: 15003, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: twb.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 1119, server: 116.129.254.78, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.78}, udp: true}
-  - {name: CN 1243, server: 116.129.254.78, port: 63041, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: 116.129.254.78}, udp: true}
-  - {name: CN 767, server: teshu.bdpyyds.top, port: 26006, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: CN 596, server: gg02.nfeng6.pp.ua, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gg02.nfeng6.pp.ua}, udp: true}
-  - {name: UN 474, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 556b20c1-272e-44ec-881b-94f410ac75de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: US 22, server: els200.jklist.ga, port: 2095, type: vmess, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /wo.png, ws-headers: {Host: els200.jklist.ga}, udp: true}
-  - {name: CN 1044, server: mc.xiaohouzi.club, port: 28325, type: vmess, uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: mc.xiaohouzi.club}, udp: true}
-  - {name: HK 885, server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /szGxn, ws-headers: {Host: 47.243.87.171}, udp: true}
-  - {name: CN 765, server: teshu.bdpyyds.top, port: 26003, type: trojan, password: eec221e9-eba3-3b67-83d5-78fd7370500d, sni: teshu.bdpyyds.top, skip-cert-verify: true, udp: true}
-  - {name: AU 97, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: JP 592, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
-  - {name: DE 598, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde1.0bad.com}, udp: true}
-  - {name: RU 124, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: JP 787, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: IN 73, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: AU 95, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 351, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: c0bc4a6f-74f9-49f3-b722-7ebb6aca17d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: KR 352, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN 334, server: 116.129.254.78, port: 63078, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.78}, udp: true}
+  - {name: US 211, server: zhilian-us-a.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: zhilian-us-a.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: TW 805, server: kaizen-tw-4.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: kaizen-tw-4.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: US 3, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us01.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 222, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 442, server: 14.29.124.174, port: 11041, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 696, server: 14.29.124.174, port: 11012, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 376, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 400, server: 14.29.124.174, port: 11009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: AU 181, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US 210, server: kaizen-us-19.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: kaizen-us-19.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: US 213, server: kaizen-us-17.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: kaizen-us-17.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: CN 339, server: 223.166.129.29, port: 63028, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.129.29}, udp: true}
+  - {name: CN 679, server: 14.29.124.174, port: 11037, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: RU 826, server: zhilian-ru-c.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: zhilian-ru-c.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: CN 725, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: DE 349, server: 213.226.71.209, port: 31251, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 75, server: sha-cu-001.omo-m0m.com, port: 5601, type: trojan, password: 9d6a601d-8593-39b5-8861-86ac78c0c5ad, sni: sha-cu-001.omo-m0m.com, skip-cert-verify: true, udp: true}
+  - {name: US 212, server: zhilian-us-k.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: zhilian-us-k.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: US 214, server: kaizen-us-14.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: kaizen-us-14.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: RU 800, server: kaizen-ru-2.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: kaizen-ru-2.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: BR 21, server: 138.118.175.28, port: 31320, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US 786, server: l2-us-e.cmy-dns.com, port: 443, type: trojan, password: 3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw, sni: l2-us-e.cmy-dns.com, skip-cert-verify: true, udp: true}
+  - {name: CN 331, server: 116.129.254.65, port: 63086, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
+  - {name: CN 724, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN 600, server: gg01.nfeng6.pp.ua, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gg01.nfeng6.pp.ua}, udp: true}
-  - {name: AU 94, server: 212.81.47.17, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: US 890, server: v1.goooodserver.ml, port: 80, type: vmess, uuid: 3b5b288a-6422-4eee-ea53-e8e0edd80e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v1.goooodserver.ml}, udp: true}
-  - {name: CN 544, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 1129, server: 116.129.254.65, port: 63071, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: US 954, server: ruvds.testx.eu.org, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vmess-share/?ed=2048", ws-headers: {Host: ruvds.testx.eu.org}, udp: true}
-  - {name: HK 468, server: 43.154.107.14, port: 51370, type: vmess, uuid: d0fa15aa69514a1cf459f6da8371dd32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: BR 2835, server: 138.118.175.28, port: 31320, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 354, server: gg01.nfeng6.pp.ua, port: 63069, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gg01.nfeng6.pp.ua}, udp: true}
+  - {name: CN 743, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 711, server: gkdcu.myjcbbcn.top, port: 25884, type: vmess, uuid: 483bf39a-ff52-4750-88ca-b09551cfce10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcu.myjcbbcn.top}, udp: true}
+  - {name: CN 715, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 738, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 739, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 714, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 717, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL 695, server: 194.146.39.130, port: 31255, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 720, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 374, server: zou.zz8.shop, port: 49882, type: trojan, password: 805ba1ad-0e45-4e9e-b2b7-2a0824fd52ad, sni: zou.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: CN 719, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 731, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 748, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 375, server: zou.zz8.shop, port: 49884, type: trojan, password: 805ba1ad-0e45-4e9e-b2b7-2a0824fd52ad, sni: zou.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: US 717, server: us04.170809.xyz, port: 45233, type: ss, cipher: chacha20-ietf-poly1305, password: 599f7384-3dbc-4642-9530-f3c008eb119a, udp: true}
+  - {name: CN 718, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 730, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 734, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 737, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 741, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 746, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 727, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 735, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US 235, server: ss2.hao1799.net, port: 22382, type: ss, cipher: aes-256-gcm, password: H7TMWUvz2j, udp: true}
+  - {name: KR 641, server: 150.230.250.201, port: 33788, type: vmess, uuid: bdb27fba-62fa-415d-b751-cce31b311141, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 707, server: gkdcm.myjcbbcn.top, port: 25895, type: vmess, uuid: 483bf39a-ff52-4750-88ca-b09551cfce10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
+  - {name: CN 716, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 158, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK 636, server: 43.154.235.119, port: 10064, type: vmess, uuid: 8b115f89-27cc-4ea9-85af-dda2de597928, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN 810, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 544, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 596, server: gg02.nfeng6.pp.ua, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gg02.nfeng6.pp.ua}, udp: true}
+  - {name: CN 706, server: gkdcm.myjcbbcn.top, port: 25897, type: vmess, uuid: 483bf39a-ff52-4750-88ca-b09551cfce10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
+  - {name: CN 710, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 721, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 745, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 747, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 713, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 712, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 740, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: JP 252, server: 20.222.123.145, port: 80, type: vmess, uuid: b5daf031-befa-4411-a105-e8385a849085, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.222.123.145}, udp: true}
+  - {name: CN 723, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 244, server: 94.74.121.193, port: 8888, type: vmess, uuid: 3dca2de0-0459-496f-8819-e8003744164c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK 635, server: 43.154.114.208, port: 3245, type: vmess, uuid: e4a15b1d-8dfd-4bd7-ab33-06c8cd174c0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 1121, server: 116.129.254.78, port: 63051, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: 116.129.254.78}, udp: true}
+  - {name: CN 711 2, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 709, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 728, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 709 2, server: gkdcm.myjcbbcn.top, port: 25887, type: vmess, uuid: 483bf39a-ff52-4750-88ca-b09551cfce10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
+  - {name: US 234, server: ss1.hao1799.net, port: 22382, type: ss, cipher: aes-256-gcm, password: H7TMWUvz2j, udp: true}
+  - {name: CN 421, server: 116.129.254.78, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.78}, udp: true}
+  - {name: CN 750, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 1246, server: 116.129.254.78, port: 63086, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.78}, udp: true}
+  - {name: CN 384, server: gg03.nfeng6.pp.ua, port: 63004, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gg03.nfeng6.pp.ua}, udp: true}
+  - {name: JP 373, server: 194.156.230.198, port: 31242, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US 240, server: taiwan.gushidawang.cc, port: 57539, type: vmess, uuid: 0a9f0d25-0e1d-4ae7-a53f-97688d8930f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 1119, server: 116.129.254.78, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.78}, udp: true}
+  - {name: US 150, server: us2.asasas.top, port: 18117, type: vmess, uuid: 80efa71b-a164-3057-bdfd-ed28521256fe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: us2.asasas.top}, udp: true}
+  - {name: US 242, server: 45.78.5.246, port: 51366, type: ss, cipher: aes-256-gcm, password: ERyG9Y6LA7, udp: true}
+  - {name: CN 416, server: 223.166.129.29, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 223.166.129.29}, udp: true}
+  - {name: JP 368, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN 1104, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 523, server: liusy-hk.eastasia.cloudapp.azure.com, port: 443, type: vmess, uuid: f1d90660-29ab-4c54-b6a8-2e6e18e008d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /502a823dc9a6/, ws-headers: {Host: liusy-hk.eastasia.cloudapp.azure.com}, udp: true}
+  - {name: CN 333, server: 116.129.254.65, port: 63078, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
+  - {name: JP 638, server: 150.230.4.33, port: 50757, type: vmess, uuid: bb8729a4-43f2-44d5-cb97-662b7a1899ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 401, server: 116.129.254.65, port: 63088, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: 116.129.254.65}, udp: true}
+  - {name: CN 749, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 194, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 39, server: bai-piao-wang-zhe10.98848.xyz, port: 22168, type: trojan, password: mDmaAWoWXB, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 439, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 542, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 704, server: gkdcm.myjcbbcn.top, port: 25881, type: vmess, uuid: 483bf39a-ff52-4750-88ca-b09551cfce10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
+  - {name: CN 712 2, server: gkdcm.myjcbbcn.top, port: 25889, type: vmess, uuid: 483bf39a-ff52-4750-88ca-b09551cfce10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gkdcm.myjcbbcn.top}, udp: true}
+  - {name: HK 257, server: 20.187.71.22, port: 80, type: vmess, uuid: b5daf031-befa-4411-a105-e8385a849085, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.187.71.22}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -296,70 +448,108 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -370,209 +560,323 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -588,70 +892,108 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 778
-      - CN 722
-      - CN 1266
-      - CN 1246
-      - CN 724
-      - CN 731
+      - KR 352
+      - CN 334
+      - US 211
+      - TW 805
+      - US 3
+      - CN 222
+      - CN 442
+      - CN 696
+      - CN 376
+      - CN 400
+      - AU 181
+      - US 210
+      - US 213
+      - CN 339
+      - CN 679
+      - RU 826
       - CN 725
-      - CN 1274
-      - CN 1131
-      - AU 96
-      - CN 771
-      - CN 772
-      - CN 737
-      - HK 878
-      - US 876
-      - CN 1271
-      - CN 747
-      - CN 759
-      - US 1076
-      - KR 879
-      - CN 1250
-      - CN 396
-      - HK 479
-      - CN 1150
-      - CN 720
-      - CN 1251
-      - CH 101
-      - SG 877
-      - US 62
-      - CN 721
-      - CN 1121
-      - CN 772 2
-      - CN 1255
-      - HK 1063
-      - CN 729
-      - CN 726
-      - CN 757
-      - CN 791
-      - CN 1119
-      - CN 1243
-      - CN 767
-      - CN 596
-      - UN 474
-      - US 22
-      - CN 1044
-      - HK 885
-      - CN 765
-      - AU 97
-      - JP 592
-      - DE 598
-      - RU 124
-      - JP 787
-      - IN 73
-      - AU 95
-      - US 351
+      - DE 349
+      - CN 75
+      - US 212
+      - US 214
+      - RU 800
+      - BR 21
+      - US 786
+      - CN 331
+      - CN 724
       - CN 600
-      - AU 94
-      - US 890
-      - CN 544
-      - CN 1129
-      - US 954
-      - HK 468
-      - BR 2835
+      - CN 354
+      - CN 743
+      - CN 711
+      - CN 715
+      - CN 738
+      - CN 739
+      - CN 714
+      - CN 717
+      - NL 695
+      - CN 720
+      - HK 374
+      - CN 719
+      - CN 731
+      - CN 748
+      - HK 375
+      - US 717
+      - CN 718
+      - CN 730
+      - CN 734
+      - CN 737
+      - CN 741
+      - CN 746
+      - CN 727
+      - CN 735
+      - US 235
+      - KR 641
+      - CN 707
+      - CN 716
+      - CN 158
+      - HK 636
       - CN 810
+      - CN 544
+      - CN 596
+      - CN 706
+      - CN 710
+      - CN 721
+      - CN 745
+      - CN 747
+      - CN 713
+      - CN 712
+      - CN 740
+      - JP 252
+      - CN 723
+      - HK 244
+      - HK 635
+      - CN 1121
+      - CN 711 2
+      - CN 709
+      - CN 728
+      - CN 709 2
+      - US 234
+      - CN 421
+      - CN 750
+      - CN 1246
+      - CN 384
+      - JP 373
+      - US 240
+      - CN 1119
+      - US 150
+      - US 242
+      - CN 416
+      - JP 368
+      - CN 1104
+      - HK 523
+      - CN 333
+      - JP 638
+      - CN 401
+      - CN 749
+      - CN 194
+      - US 39
+      - CN 439
+      - CN 542
+      - CN 704
+      - CN 712 2
+      - HK 257
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
