@@ -5,16 +5,17 @@
 
 如果碰到clash不可用，请在Issues里带上截图提问，我将尽量回答。
 
-# 精选节点
-这些节点经过了一些测试，基本上不会太拉垮，但是因为纯人工测试，所以有可能有时候全死（上次更新时间见optimized.yaml 最后一次commit时间)       
 
-一键导入 Clash: 点击[这里](https://v1.mk/I9ItNx3)
+# ~~精选节点~~ 由于暂时无法筛选节点，请使用全部节点。(08/06/22)
+~~这些节点经过了一些测试，基本上不会太拉垮，但是因为纯人工测试，所以有可能有时候全死（上次更新时间见optimized.yaml 最后一次commit时间)       
 
-> 如需手动导入，请复制以下订阅中任意一个：     
+~~一键导入 Clash: 点击[这里](https://v1.mk/I9ItNx3)~~
+
+> ~~如需手动导入，请复制以下订阅中任意一个：     
 > mirror①：https://github.xiaokuqwq.eu.org/https://raw.githubusercontent.com/daycat/freeray/main/optimized.yaml     
 > mirror②：https://ghproxy.com/https://raw.githubusercontent.com/daycat/freeray/main/optimized.yaml      
 > mirror③：https://raw-gh.gcdn.mirr.one/daycat/freeray/main/optimized.yaml      
-> mirror④：https://raw.github.qqcn.xyz/daycat/freeray/main/optimized.yaml
+> mirror④：https://raw.github.qqcn.xyz/daycat/freeray/main/optimized.yaml~~
 
 # 全部节点
 全部未经测试的节点，敏感期可以整点留着，免的失联。不建议日常使用，除非你想测试一下你手机/电脑的性能。    
@@ -39,5 +40,11 @@
 [肥羊短链接](https://v1.mk)
 
 ## 友情推荐
-[OpenIT 免费节点](https://openit.ml)
+[OpenIT 免费节点](https://openit.ml)      
+
+## 寻找志愿者！
+现在项目急需志愿者来测试节点，有一台电脑即可。如果有愿意参加的，请[点击这里联系我！](https://t.me/day_cat)      
+感谢各位对freeray的支持。
+
+
 
