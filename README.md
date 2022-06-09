@@ -1,29 +1,29 @@
 # 纯免费clash节点
-为最需要的人提供
-无筛选，请选择使用'automatic'节点自动筛选
-每小时自动更新。初期版本bug非常多，请理解。
+从非常多（真的非常多哒！！！）的节点里找出来的！😇
 
-如果碰到clash不可用，请在Issues里带上截图提问，我将尽量回答。
+如果碰到clash💥，请在Issues里带上🌠提问，我将尽量🗣。
 
 
 # 精选节点 
-这些节点经过了一些测试，基本上不会太拉垮，但是因为纯人工测试，所以有可能有时候全死（上次更新时间见optimized.yaml 最后一次commit时间)       
+大概不会太拉垮，但是因为纯人工测试，所以当我睡的太香时可能有时候全部挂逼诺😈！     
+（上次更新时间见optimized.yaml 最后一次commit时间）       
 
-一键导入 Clash: 点击[这里](https://v1.mk/I9ItNx3)
+跟我一样是懒人？点击[这里](https://v1.mk/I9ItNx3) 快速导入吧！
 
-> 如需手动导入，请复制以下订阅中任意一个：     
+> 喜欢折腾？不用谢！     
 > mirror①：https://github.xiaokuqwq.eu.org/https://raw.githubusercontent.com/daycat/freeray/main/optimized.yaml     
 > mirror②：https://ghproxy.com/https://raw.githubusercontent.com/daycat/freeray/main/optimized.yaml      
 > mirror③：https://raw-gh.gcdn.mirr.one/daycat/freeray/main/optimized.yaml      
 > mirror④：https://raw.github.qqcn.xyz/daycat/freeray/main/optimized.yaml~~
 
 # 全部节点
-全部未经测试的节点，敏感期可以整点留着，免的失联。不建议日常使用，除非你想测试一下你手机/电脑的性能。    
+当你是在太无聊，或者想看看精选节点是在多少个节点里找出来的，（或许想测试下手机能不能煎鸡蛋🍳？）可以试试这个！
+（或者也可以在高墙时期留着，几千个烂土豆里总能找到一两个牛扒🥩吧！）
 
-一键导入 Clash: 点击[这里](https://v1.mk/lI8iK7a)       
-一键导入 Clash 2: 点击[这里](https://v1.mk/mgen9it)
+懒人，点击[这里](https://v1.mk/lI8iK7a)！              
+或者，点击[这里](https://v1.mk/mgen9it)或许也可以？           
 
-> 如需手动导入，请复制以下订阅中任意一个：     
+> 诶，居然有人看到这里？那估计也是爱❤️折腾的吧～：     
 > mirror①：https://github.xiaokuqwq.eu.org/https://raw.githubusercontent.com/daycat/freeray/main/output.yaml     
 > mirror②：https://ghproxy.com/https://raw.githubusercontent.com/daycat/freeray/main/output.yaml      
 > mirror③：https://raw-gh.gcdn.mirr.one/daycat/freeray/main/output.yaml      
@@ -32,24 +32,20 @@
 ## 开源协议
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
  
-使用此项目任意资源时，您必须遵守 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+使用此项目任意资源时，请大家一起遵守 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)吧～
 
-## 致谢
-[长风](https://github.com/changfengoss/pub)      
-[御坂](https://github.com/Misaka-blog)        
-[肥羊短链接](https://v1.mk)      
+## 友情推荐 👩‍❤️‍💋‍👨
+[OpenIT 免费节点](https://openit.ml)（神～）      
 
-## 友情推荐
-[OpenIT 免费节点](https://openit.ml)      
+## 依赖项目（好耶！😙）：
+[daycat/Pyray](https://github.com/daycat/pyray) - 寻找节点的主程序～        
+[daycat/ClashCheck](https://github.com/daycat/clashcheck) - 扔掉烂土豆的小帮手～       
+[Dreamacro/clash](https://github.com/Dreamacro/clash) - 咱最最最重要的依赖～        
 
-## 依赖项目：
-[daycat/Pyray](https://github.com/daycat/pyray)        
-[daycat/ClashCheck](https://github.com/daycat/clashcheck)       
-[Dreamacro/clash](https://github.com/Dreamacro/clash)        
-
-## 寻找志愿者！
-现在项目急需志愿者来测试节点，有一台电脑即可。如果有愿意参加的，请[点击这里联系我！](https://t.me/day_cat)      
-感谢各位对freeray的支持。
+## 嘿！你听说了咱缺动物吗？
+一只小猫维护这个项目实在不太行（呜呜呜）
+所以如果有人（或者猫？狗狗企鹅大象长颈鹿等等也可以哦～）愿意跟咱一起温壶，请[点击这里联系我！](https://t.me/day_cat)      
+感谢各位对freeray的支持！
 
 
 
