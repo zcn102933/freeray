@@ -6,12 +6,12 @@
 如果碰到clash不可用，请在Issues里带上截图提问，我将尽量回答。
 
 
-# ~~精选节点~~ 由于暂时无法筛选节点，请使用全部节点。(08/06/22)
-~~这些节点经过了一些测试，基本上不会太拉垮，但是因为纯人工测试，所以有可能有时候全死（上次更新时间见optimized.yaml 最后一次commit时间)       
+# 精选节点 
+这些节点经过了一些测试，基本上不会太拉垮，但是因为纯人工测试，所以有可能有时候全死（上次更新时间见optimized.yaml 最后一次commit时间)       
 
-~~一键导入 Clash: 点击[这里](https://v1.mk/I9ItNx3)~~
+一键导入 Clash: 点击[这里](https://v1.mk/I9ItNx3)
 
-> ~~如需手动导入，请复制以下订阅中任意一个：     
+> 如需手动导入，请复制以下订阅中任意一个：     
 > mirror①：https://github.xiaokuqwq.eu.org/https://raw.githubusercontent.com/daycat/freeray/main/optimized.yaml     
 > mirror②：https://ghproxy.com/https://raw.githubusercontent.com/daycat/freeray/main/optimized.yaml      
 > mirror③：https://raw-gh.gcdn.mirr.one/daycat/freeray/main/optimized.yaml      
@@ -36,11 +36,16 @@
 
 ## 致谢
 [长风](https://github.com/changfengoss/pub)      
-[御坂](https://github.com/Misaka-blog)
-[肥羊短链接](https://v1.mk)
+[御坂](https://github.com/Misaka-blog)        
+[肥羊短链接](https://v1.mk)      
 
 ## 友情推荐
 [OpenIT 免费节点](https://openit.ml)      
+
+## 依赖项目：
+[daycat/Pyray](https://github.com/daycat/pyray)        
+[daycat/ClashCheck](https://github.com/daycat/clashcheck)       
+[Dreamacro/clash](https://github.com/Dreamacro/clash)        
 
 ## 寻找志愿者！
 现在项目急需志愿者来测试节点，有一台电脑即可。如果有愿意参加的，请[点击这里联系我！](https://t.me/day_cat)      
