@@ -81,127 +81,164 @@ dns:
 proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 1"
   server: 14.29.124.168
-  port: 25226
+  port: 25287
   type: ss
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 14.29.124.174
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  port: 11031
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 14.29.124.168
-  type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  port: 25261
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1E6\U0001F1FA AU 4"
-  server: au2-2.nigirocloud.com
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: 34.215.130.186
+  type: vmess
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 10089
+  uuid: 3608c9dc-1eeb-48b0-b570-43074b4a0c9e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+- name: "\U0001F1E6\U0001F1FA AU 3"
+  server: 212.81.47.15
   port: 443
   type: trojan
   password: 3yFq7NCP53mVfpXJz3
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1F0\U0001F1F7 KR 5"
-  server: jgw2.gaox.ml
-  port: 443
-  type: trojan
-  password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E6\U0001F1FA AU 6"
-  server: jgwxn2.gaox.ml
+- name: "\U0001F1E6\U0001F1FA AU 4"
+  server: jp-server-02.selfupay.com
   type: trojan
   country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: 36ebef7d1b1d6205fd0c55f28800c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  password: P9azqCxQMAaa3fa58b581353bb375d2ddad0f327938
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 7"
-  server: jgwxn4.gaox.ml
+- name: "\U0001F1E6\U0001F1FA AU 5"
+  server: usa-server-02.selfupay.com
   type: trojan
   country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: 283695dc-fcce8c1ab3c-89b3-4933-92df-682e6dce7819
+  password: 08d178d4-ec8b-11eb-36ebef7d1b1d6205fd0c55f28800e674
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 8"
-  server: hk-server-02.selfupay.com
-  type: trojan
-  country: "\U0001F1E6\U0001F1FA AU"
-  port: 443
-  password: sharecen36ebef7d1b1d6205fd0c55f28800e674
-  skip-cert-verify: true
-  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 24016
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 25229
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 24004
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
 - name: "\U0001F1E6\U0001F1FA AU 9"
   server: jgwxn4.gaox.ml
   type: trojan
   country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: e23e8c1ab3c-89b3-4933-92df-682e6dce7819
+  password: 36ebef7d1b1de8c1ab3c-89b3-4933-92df-682e6dce7819
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 10"
-  server: jgwxn2.gaox.ml
-  type: trojan
-  country: "\U0001F1E6\U0001F1FA AU"
-  port: 443
-  password: 36ebef7d1b1d6205fd0c55f28800e6476ddab3-29a2-4c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 11"
+- name: "\U0001F1E8\U0001F1F3 CN 10"
   server: 14.29.124.168
   type: ss
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 25297
+  port: 25287
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 12"
-  server: cm.3sx.xyz
-  port: 41001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 13"
-  server: iepl.3sx.xyz
-  port: 61001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 14"
-  server: iepl.3sx.xyz
-  port: 21003
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 15"
-  server: cm.3sx.xyz
-  port: 41001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 16"
-  server: iepl.3sx.xyz
-  port: 61001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 17"
-  server: cm.3sx.xyz
-  port: 21002
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- name: "\U0001F1EE\U0001F1F9 IT 18"
-  server: tj-sg02.yiyodns.xyz
+- name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: 14.29.124.174
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 11039
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 25266
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 13"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 25295
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 14"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 25217
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E6\U0001F1FA AU 15"
+  server: usa-server-02.selfupay.com
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa36ebef7d1b1d6205fd0c55f28800e674
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 16"
+  server: 180.163.62.91
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 10065
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1FA\U0001F1F8 US 17"
+  server: 154.94.218.130
+  type: vmess
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  cipher: auto
+  network: ws
+  ws-path: /ws
+  servername: viibah6u.com
+  ws-headers:
+    HOST: viibah6u.com
+  http-opts: {}
+  h2-opts: {}
+  tls: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 18"
+  server: xioix.gq
   type: trojan
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
-  password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc
+  password: 9b7195ba-f029-4d7d-a728-ece6e0fdc363
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 19"
+  server: 165.22.53.6
+  type: trojan
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 28443
+  password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F8\U0001F1EC SG 20"
+  server: 206.189.156.88
+  type: trojan
+  country: "\U0001F1F8\U0001F1ECSG"
+  port: 28443
+  password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd
   skip-cert-verify: true
   udp: true
 proxy-groups:
@@ -209,23 +246,25 @@ proxy-groups:
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
   - "\U0001F1E6\U0001F1FA AU 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E6\U0001F1FA AU 6"
-  - "\U0001F1E6\U0001F1FA AU 7"
-  - "\U0001F1E6\U0001F1FA AU 8"
+  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E6\U0001F1FA AU 9"
-  - "\U0001F1E6\U0001F1FA AU 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1E6\U0001F1FA AU 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
-  - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1EE\U0001F1F9 IT 18"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FA\U0001F1F8 US 18"
+  - "\U0001F1F8\U0001F1EC SG 19"
+  - "\U0001F1F8\U0001F1EC SG 20"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
@@ -233,23 +272,25 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
   - "\U0001F1E6\U0001F1FA AU 4"
-  - "\U0001F1F0\U0001F1F7 KR 5"
-  - "\U0001F1E6\U0001F1FA AU 6"
-  - "\U0001F1E6\U0001F1FA AU 7"
-  - "\U0001F1E6\U0001F1FA AU 8"
+  - "\U0001F1E6\U0001F1FA AU 5"
+  - "\U0001F1E8\U0001F1F3 CN 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E6\U0001F1FA AU 9"
-  - "\U0001F1E6\U0001F1FA AU 10"
+  - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
   - "\U0001F1E8\U0001F1F3 CN 12"
   - "\U0001F1E8\U0001F1F3 CN 13"
   - "\U0001F1E8\U0001F1F3 CN 14"
-  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1E6\U0001F1FA AU 15"
   - "\U0001F1E8\U0001F1F3 CN 16"
-  - "\U0001F1E8\U0001F1F3 CN 17"
-  - "\U0001F1EE\U0001F1F9 IT 18"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FA\U0001F1F8 US 18"
+  - "\U0001F1F8\U0001F1EC SG 19"
+  - "\U0001F1F8\U0001F1EC SG 20"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
