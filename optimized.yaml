@@ -79,88 +79,233 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
-  server: 14.29.124.168
-  port: 25294
-  type: ss
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1EF\U0001F1F5 JP 2"
-  server: tky3.ssgnode.ga
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: usa-washington.lvuft.com
   port: 443
-  password: 82lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: 45.66.134.219
-  type: trojan
-  country: "\U0001F1EF\U0001F1F5JP"
-  port: 443
-  password: 28d98f761aca9d636f44db62544628eb
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 4"
-  server: 51.81.223.0
   type: vmess
-  country: "\U0001F1FA\U0001F1F8US"
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  alterId: 4
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  ws-path: /ws
+  tls: true
+  ws-headers:
+    Host: usa-washington.lvuft.com
+- name: "\U0001F1E6\U0001F1FA AU 2"
+  server: au2-3.nigirocloud.com
   port: 443
-  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
-  alterId: 32
+  type: trojan
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 3"
+  server: 212.81.47.16
+  port: 443
+  type: trojan
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1F0\U0001F1F7 KR 4"
+  server: jgwcc3.gaox.ml
+  port: 443
+  type: trojan
+  password: b291d129-ee55-4801-a9b8-b5316e5c37b7
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 5"
+  server: 212.81.47.15
+  port: 443
+  type: trojan
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 6"
+  server: 212.81.47.11
+  port: 443
+  type: trojan
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: ingress-i2.onebox6.org
+  port: 38104
+  type: vmess
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: www.ivpnpro.net
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 8"
+  server: au2-1.nigirocloud.com
+  type: trojan
+  country: "\U0001F1E9\U0001F1EA DE"
+  port: 443
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 9"
+  server: s3.hazz.win
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 10"
+  server: 212.81.47.14
+  type: trojan
+  country: "\U0001F1E9\U0001F1EA DE"
+  port: 443
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 11"
+  server: jgwxn2.gaox.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 12"
+  server: 43.128.253.82
+  type: vmess
+  country: "\U0001F1F8\U0001F1EC SG"
+  port: 31372
+  uuid: 2a9056a7-bf92-40c8-f155-1e14aac9beba
+  alterId: 0
   cipher: auto
   network: tcp
   ws-path: /
   http-opts: {}
   h2-opts: {}
   skip-cert-verify: true
-- name: "\U0001F1F7\U0001F1FA RU 5"
-  server: v2.ssrsub.com
+- name: "\U0001F1FA\U0001F1F8 US 13"
+  server: bai-piao-wang-zhe10.98848.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 JP 14"
+  server: 150.230.4.136
   type: vmess
-  country: "\U0001F1F7\U0001F1FARU"
-  port: 18443
-  uuid: f736834f-1fc8-4738-9884-9afe0eb0d818
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 11151
+  uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555
   alterId: 0
   cipher: auto
-  network: ws
-  ws-path: /api/v3/download.getFile
-  servername: v2.ssrsub.com
-  ws-headers:
-    HOST: v2.ssrsub.com
+  network: tcp
+  ws-path: /
   http-opts: {}
   h2-opts: {}
-  tls: true
   skip-cert-verify: true
-- name: "\U0001F1E6\U0001F1FA AU 6"
-  server: 212.81.47.12
+- name: "\U0001F1E6\U0001F1FA AU 15"
+  server: jgwxn2.gaox.ml02.selfupay.com
   type: trojan
-  country: "\U0001F1E9\U0001F1EADE"
+  country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: 3yFq7NCP53mVfpXJz3
+  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 16"
+  server: ned-server-01.selfupay.com
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: 82lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-1a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 17"
+  server: jgwxn2.gaox.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: 36ebef7d1b1dc2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 18"
+  server: jp-server-02.selfupay.com
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: P9azqCxQa3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 19"
+  server: hk-server-02.selfupay.com
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: 280a1162-00cb-11ec-a8bf-f23c91a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 20"
+  server: us2.tcpbbr.net
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 283695dc-fcc8-11ea-8684-f23c913c8d2b
   skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E6\U0001F1FA AU 5"
   - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E6\U0001F1FA AU 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E6\U0001F1FA AU 10"
+  - "\U0001F1E6\U0001F1FA AU 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1EF\U0001F1F5 JP 14"
+  - "\U0001F1E6\U0001F1FA AU 15"
+  - "\U0001F1E6\U0001F1FA AU 16"
+  - "\U0001F1E6\U0001F1FA AU 17"
+  - "\U0001F1E6\U0001F1FA AU 18"
+  - "\U0001F1E6\U0001F1FA AU 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1EF\U0001F1F5 JP 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
-  - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1F7\U0001F1FA RU 5"
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1F0\U0001F1F7 KR 4"
+  - "\U0001F1E6\U0001F1FA AU 5"
   - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E6\U0001F1FA AU 8"
+  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E6\U0001F1FA AU 10"
+  - "\U0001F1E6\U0001F1FA AU 11"
+  - "\U0001F1EF\U0001F1F5 JP 12"
+  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1EF\U0001F1F5 JP 14"
+  - "\U0001F1E6\U0001F1FA AU 15"
+  - "\U0001F1E6\U0001F1FA AU 16"
+  - "\U0001F1E6\U0001F1FA AU 17"
+  - "\U0001F1E6\U0001F1FA AU 18"
+  - "\U0001F1E6\U0001F1FA AU 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
