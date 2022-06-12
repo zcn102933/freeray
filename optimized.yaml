@@ -80,113 +80,109 @@ dns:
     - 0.0.0.0/32
 proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 1"
-  server: 14.29.124.168
+  server: 14.29.124.174
+  port: 11044
   type: ss
-  country: "\U0001F1E8\U0001F1F3 CN"
-  port: 25283
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
 - name: "\U0001F1E8\U0001F1F3 CN 2"
+  server: 14.29.124.168
+  type: ss
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 25259
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 3"
   server: 14.29.124.174
   type: ss
   country: "\U0001F1E8\U0001F1F3 CN"
-  port: 11009
+  port: 11003
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1EF\U0001F1F5 JP 3"
-  server: jp.useanlo.cf
-  type: trojan
-  country: "\U0001F1F3\U0001F1F1NL"
-  port: 10203
-  password: b64b0f9c-23df-3112-a790-d8aa068aa2fe
-  skip-cert-verify: true
-  udp: true
 - name: "\U0001F1EF\U0001F1F5 JP 4"
-  server: jisu105.yaya89.xyz
-  type: vmess
-  country: "\U0001F1EF\U0001F1F5 JP"
-  port: 51105
-  uuid: 0358c017-415c-35e4-a79d-7cd9e25afe82
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-path: /hls/cctv5phd.m3u8
-  servername: jisu105.yaya89.xyz
-  ws-headers:
-    HOST: jisu105.yaya89.xyz
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: "\U0001F1E6\U0001F1FA AU 5"
-  server: hk-server-02.selfupay.com
+  server: 210.152.13.168
   type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
+  country: "\U0001F1EF\U0001F1F5JP"
   port: 443
-  password: a3fa58b581353bb375d2ddad0f327938
+  password: 18e513fe-f7f4-353d-84ca-bc9646fb2528mielink
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 HK 6"
-  server: ssl.tcpbbr.net
+- name: "\U0001F1E6\U0001F1FA AU 5"
+  server: jp-server-02.selfupay.com
   type: trojan
-  country: "\U0001F1ED\U0001F1F0HK"
+  country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b
+  password: ccf1ee40-b4ab-11eb-b421-1239d0a3fa58b581353bb375d2ddad0f327938
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 6"
+  server: jgwxn2.gaox.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FA AU"
+  port: 443
+  password: 03f9d1c7-40f9-475c-bf46-e3883ee7c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E6\U0001F1FA AU 7"
-  server: jgwxn4.gaox.ml
+  server: hk-server-02.selfupay.com
   type: trojan
-  country: "\U0001F1E6\U0001F1FAAU"
+  country: "\U0001F1E6\U0001F1FA AU"
   port: 443
-  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+  password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-36ebef7d1b1d6205fd0c55f28800e674
   skip-cert-verify: true
   udp: true
 - name: "\U0001F1E8\U0001F1F3 CN 8"
   server: 14.29.124.174
   type: ss
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 11032
+  port: 11033
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
 - name: "\U0001F1E8\U0001F1F3 CN 9"
   server: 14.29.124.168
   type: ss
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 24009
+  port: 25252
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
 - name: "\U0001F1E8\U0001F1F3 CN 10"
   server: 14.29.124.168
   type: ss
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 24003
+  port: 25220
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
 - name: "\U0001F1E8\U0001F1F3 CN 11"
+  server: 180.163.62.91
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 10065
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 12"
+  server: 14.29.124.174
+  type: ss
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 11008
+  password: QazEdcTgb159@$*
+  cipher: aes-128-cfb
+- name: "\U0001F1E8\U0001F1F3 CN 13"
   server: 14.29.124.168
   type: ss
   country: "\U0001F1E8\U0001F1F3CN"
-  port: 25252
+  port: 25286
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1F0\U0001F1F7 KR 12"
-  server: jgw3.gaox.ml
+- name: "\U0001F1EF\U0001F1F5 JP 14"
+  server: jgwdb3.gaox.ml
   type: trojan
-  country: "\U0001F1F0\U0001F1F7KR"
+  country: "\U0001F1EF\U0001F1F5JP"
   port: 443
-  password: a1718180-d616-4b71-9bb6-3e96ba20f921
+  password: 8d2d5953-d649-4034-94f2-72f2df2623da
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 13"
-  server: 212.81.47.11
-  type: trojan
-  country: "\U0001F1E9\U0001F1EADE"
-  port: 443
-  password: 3yFq7NCP53mVfpXJz3
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1E6\U0001F1FA AU 14"
-  server: 212.81.47.14
+- name: "\U0001F1E6\U0001F1FA AU 15"
+  server: 212.81.47.16
   type: trojan
   country: "\U0001F1E9\U0001F1EADE"
   port: 443
@@ -199,18 +195,19 @@ proxy-groups:
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E6\U0001F1FA AU 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E6\U0001F1FA AU 6"
   - "\U0001F1E6\U0001F1FA AU 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1E6\U0001F1FA AU 13"
-  - "\U0001F1E6\U0001F1FA AU 14"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1EF\U0001F1F5 JP 14"
+  - "\U0001F1E6\U0001F1FA AU 15"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
@@ -219,18 +216,19 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1EF\U0001F1F5 JP 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1EF\U0001F1F5 JP 4"
   - "\U0001F1E6\U0001F1FA AU 5"
-  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E6\U0001F1FA AU 6"
   - "\U0001F1E6\U0001F1FA AU 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
   - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
   - "\U0001F1E8\U0001F1F3 CN 11"
-  - "\U0001F1F0\U0001F1F7 KR 12"
-  - "\U0001F1E6\U0001F1FA AU 13"
-  - "\U0001F1E6\U0001F1FA AU 14"
+  - "\U0001F1E8\U0001F1F3 CN 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1EF\U0001F1F5 JP 14"
+  - "\U0001F1E6\U0001F1FA AU 15"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
