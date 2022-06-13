@@ -81,37 +81,69 @@ dns:
 proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 1"
   server: 14.29.124.168
-  port: 25254
+  port: 24007
   type: ss
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
 - name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 180.163.62.91
+  server: 14.29.124.168
   type: ss
   country: "\U0001F1E8\U0001F1F3 CN"
-  port: 10065
+  port: 25219
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1FA\U0001F1F8 US 3"
-  server: bai-piao-wang-zhe10.98848.xyz
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 3"
+  server: iepl.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: zh01lv5sgp03.feiguayun.xyz
+  port: 34087
+  cipher: aes-256-gcm
+  password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: cm.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 6"
+  server: cm.3sx.xyz
+  port: 41002
+  cipher: chacha20-ietf-poly1305
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: iepl.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+- name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: 103.56.62.145
   type: trojan
-  country: "\U0001F1FA\U0001F1F8 US"
-  port: 48240
-  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 3383
+  password: d66013c645b93c5c
   skip-cert-verify: true
   udp: true
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: bgpv2.ktyjsq.com
-  port: 12221
-  type: vmess
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 5"
-  server: gcfree1.galaxy-cloud.icu
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: cm.3sx.xyz
+  port: 21001
+  cipher: chacha20-ietf-poly1305
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 10"
+  server: zh01lv5au05.feiguayun.xyz
+  port: 39087
+  cipher: aes-256-gcm
+  password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29
+- name: "\U0001F1FA\U0001F1F8 US 11"
+  server: gcfree2.galaxy-cloud.icu
   type: vmess
   country: "\U0001F1FA\U0001F1F8US"
   port: 443
@@ -127,51 +159,52 @@ proxies:
   h2-opts: {}
   tls: true
   skip-cert-verify: true
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 6"
-  server: iepl.3sx.xyz
-  port: 61001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 7"
-  server: cm.3sx.xyz
-  port: 41001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 8"
-  server: gy.ziqiyun.xyz
-  port: 44041
-  cipher: chacha20-ietf-poly1305
-  password: 297545c2-a59d-4610-9580-a7baa3657a57
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 12"
+  ws-opts:
+    path: /chat
+    headers:
+      host: vus2.0bad.com
+  server: vus2.0bad.com
+  port: 443
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
 - type: trojan
-  name: "\U0001F1FA\U0001F1F8 US 9"
-  server: bai-piao-wang-zhe10.98848.xyz
-  port: 48240
-  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  name: "\U0001F1E8\U0001F1F3 CN 13"
+  server: cm.3sx.xyz
+  port: 12304
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
   udp: true
   skip-cert-verify: true
-- type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 10"
-  server: iepl.3sx.xyz
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+  sni: douyincdn.com
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 14"
+  server: us2.nodegz.top
+  port: 444
+  password: c85f1706-0e63-46bf-8f05-3a2b95b5ba3c
+  udp: true
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
@@ -180,14 +213,18 @@ proxy-groups:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1E8\U0001F1F3 CN 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
-  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 CN 5"
   - "\U0001F1E8\U0001F1F3 CN 6"
   - "\U0001F1E8\U0001F1F3 CN 7"
   - "\U0001F1E8\U0001F1F3 CN 8"
-  - "\U0001F1FA\U0001F1F8 US 9"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   - "\U0001F1E8\U0001F1F3 CN 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1FA\U0001F1F8 US 14"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
