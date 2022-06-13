@@ -79,59 +79,106 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: "\U0001F1E8\U0001F1F3 CN 1"
-  server: 14.29.124.168
-  type: ss
-  port: 24006
+- name: "\U0001F1EF\U0001F1F5 JP 1"
+  server: s1.hazz.win
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
   udp: true
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
 - name: "\U0001F1FA\U0001F1F8 US 2"
-  server: ussc.scsevers.cf
+  server: fhcamd2.gaox.ml
   port: 443
   type: trojan
-  password: sharecentre
+  password: dbf9bf9c-2c3f-474a-8031-d4c00666a989
+  sni: fhcamd2.gaox.ml
   skip-cert-verify: true
 - name: "\U0001F1E6\U0001F1FA AU 3"
-  server: jgwxn4.gaox.ml
+  server: 212.81.47.12
   type: trojan
-  country: "\U0001F1E6\U0001F1FA AU"
+  country: "\U0001F1E9\U0001F1EA DE"
   port: 443
-  password: e8c1ab3c-89b3-4933-92df-682e6dce7819
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: gycd1.csccdd.xyz
+  port: 52340
+  type: vmess
+  uuid: 1dc13504-e4ba-3c49-8e0b-6a3eb4e40335
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /index
+    headers:
+      Host: gycd1.csccdd.xyz
+  udp: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 5"
+  server: iepl.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: 5cfba73f-d724-4e0e-b261-e0c90a549046
+- name: "\U0001F1FA\U0001F1F8 US 6"
+  server: us2.tcpbbr.net
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 443
+  password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d
   skip-cert-verify: true
   udp: true
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: zh01lv5sgp03.feiguayun.xyz
-  port: 34087
+  name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: zh01lv5au05.feiguayun.xyz
+  port: 39087
   cipher: aes-256-gcm
   password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29
+- type: vmess
+  name: "\U0001F1FA\U0001F1F8 US 8"
+  server: 20.247.107.46
+  port: 80
+  uuid: 95afdb4f-5a7f-4323-8fed-a89b05e9b66a
+  alterId: 0
+  cipher: auto
+  network: ws
 - type: ss
-  name: "\U0001F1E8\U0001F1F3 CN 5"
-  server: zh01lv5ge04.feiguayun.xyz
-  port: 36087
+  name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: zh01lv5sgp03.feiguayun.xyz
+  port: 34087
   cipher: aes-256-gcm
   password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E6\U0001F1FA AU 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1EF\U0001F1F5 JP 1"
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1E6\U0001F1FA AU 3"
   - "\U0001F1E8\U0001F1F3 CN 4"
   - "\U0001F1E8\U0001F1F3 CN 5"
+  - "\U0001F1FA\U0001F1F8 US 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1FA\U0001F1F8 US 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
