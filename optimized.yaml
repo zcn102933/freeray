@@ -80,31 +80,34 @@ dns:
     - 0.0.0.0/32
 proxies:
 - name: "\U0001F1E8\U0001F1F3 CN 1"
-  server: 14.29.124.168
-  port: 25289
+  server: 180.163.62.91
   type: ss
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 10064
   password: QazEdcTgb159@$*
   cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 2"
-  server: 14.29.124.168
-  port: 25210
-  type: ss
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 3"
-  server: 14.29.124.168
-  type: ss
-  port: 24016
+- name: "\U0001F1E6\U0001F1FA AU 2"
+  server: 212.81.47.12
+  port: 443
+  type: trojan
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
   udp: true
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
-- name: "\U0001F1E8\U0001F1F3 CN 4"
-  server: 14.29.124.168
-  type: ss
-  country: "\U0001F1E8\U0001F1F3CN"
-  port: 25217
-  password: QazEdcTgb159@$*
-  cipher: aes-128-cfb
+- name: "\U0001F1E6\U0001F1FA AU 3"
+  server: au2-1.nigirocloud.com
+  port: 443
+  type: trojan
+  password: 3yFq7NCP53mVfpXJz3
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 4"
+  server: jgwxn2.gaox.ml
+  type: trojan
+  country: "\U0001F1E6\U0001F1FAAU"
+  port: 443
+  password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26
+  skip-cert-verify: true
+  udp: true
 - type: vmess
   name: "\U0001F1FA\U0001F1F8 US 5"
   server: 51.81.223.18
@@ -113,15 +116,37 @@ proxies:
   alterId: 32
   cipher: auto
   network: tcp
+- type: trojan
+  name: "\U0001F1E6\U0001F1FA AU 6"
+  server: 212.81.47.13
+  port: 443
+  password: 3yFq7NCP53mVfpXJz3
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 KR 7"
+  server: 146.56.45.173
+  type: vmess
+  country: "\U0001F1EF\U0001F1F5JP"
+  port: 21365
+  uuid: 49526417-e201-4949-8055-81b0fb264be5
+  alterId: 0
+  cipher: auto
+  network: tcp
+  ws-path: /
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
   - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1E6\U0001F1FA AU 4"
   - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
@@ -129,10 +154,12 @@ proxy-groups:
   proxies:
   - automatic
   - "\U0001F1E8\U0001F1F3 CN 1"
-  - "\U0001F1E8\U0001F1F3 CN 2"
-  - "\U0001F1E8\U0001F1F3 CN 3"
-  - "\U0001F1E8\U0001F1F3 CN 4"
+  - "\U0001F1E6\U0001F1FA AU 2"
+  - "\U0001F1E6\U0001F1FA AU 3"
+  - "\U0001F1E6\U0001F1FA AU 4"
   - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E6\U0001F1FA AU 6"
+  - "\U0001F1F0\U0001F1F7 KR 7"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
