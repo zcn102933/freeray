@@ -1,0 +1,6021 @@
+port: 7890
+socks-port: 7891
+bind-address: '*'
+mode: rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: true
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - '*.lan'
+  - '*.linksys.com'
+  - '*.linksyssmartwifi.com'
+  - swscan.apple.com
+  - mesu.apple.com
+  - '*.msftconnecttest.com'
+  - '*.msftncsi.com'
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - '*.time.edu.cn'
+  - '*.ntp.org.cn'
+  - +.pool.ntp.org
+  - time1.cloud.tencent.com
+  - +.music.163.com
+  - '*.126.net'
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - '*.kuwo.cn'
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - +.y.qq.com
+  - +.music.tc.qq.com
+  - aqqmusic.tc.qq.com
+  - +.stream.qqmusic.qq.com
+  - '*.xiami.com'
+  - +.music.migu.cn
+  - +.srv.nintendo.net
+  - +.stun.playstation.net
+  - xbox.*.microsoft.com
+  - +.xboxlive.com
+  - localhost.ptlogin2.qq.com
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - '*.mcdn.bilivideo.cn'
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+proxies:
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: s3.hazz.win
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: bai-piao-wang-zhe10.98848.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8 US"
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 3"
+  server: s3.hazz.win
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 4"
+  server: bai-piao-wang-zhe10.98848.xyz
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 5"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  type: trojan
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 6"
+  server: azhk.n.optage.moe
+  port: 62500
+  password: d3c34184-e1b5-42d0-8f52-d89c8a095301
+  udp: true
+  skip-cert-verify: true
+  sni: azhk.n.optage.moe
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 7"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 8"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 9"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 10"
+  server: 59.148.152.78
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 11"
+  server: s3.hazz.win
+  type: trojan
+  country: "\U0001F1FA\U0001F1F8US"
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 US 12"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  type: trojan
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 13"
+  server: cm.3sx.xyz
+  port: 12311
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 14"
+  server: transit1.fanqiang.eu
+  port: 15021
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 15"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 16"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 17"
+  server: transit1.fanqiang.eu
+  port: 15039
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 18"
+  server: test01.alderlake.gay
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 19"
+  server: transit1.fanqiang.eu
+  port: 15017
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 20"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  type: trojan
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  sni: bai-piao-wang-zhe10.98848.xyz
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 21"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 22"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 23"
+  server: s3.hazz.win
+  port: 12340
+  type: trojan
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  skip-cert-verify: true
+  udp: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 24"
+  server: hgc04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 25"
+  server: cm.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 26"
+  server: fr05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 27"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 28"
+  server: cmb.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 29"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 30"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 31"
+  server: fr03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 32"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 33"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 34"
+  server: hg03.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 35"
+  server: ru04.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 36"
+  server: azhk.n.optage.moe
+  port: 62500
+  password: d3c34184-e1b5-42d0-8f52-d89c8a095301
+  udp: true
+  skip-cert-verify: true
+  sni: azhk.n.optage.moe
+- name: "\U0001F1FA\U0001F1F8 US 37"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  type: trojan
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  skip-cert-verify: true
+  udp: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 38"
+  server: cmb.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 39"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 40"
+  server: hgc05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 41"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 42"
+  server: transit1.fanqiang.eu
+  port: 15022
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 43"
+  server: au04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 44"
+  server: in05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 45"
+  server: cmb.3sx.xyz
+  port: 11002
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 46"
+  server: in03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 47"
+  server: in02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 48"
+  server: ru02.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 49"
+  server: transit1.fanqiang.eu
+  port: 15004
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 50"
+  server: in06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 51"
+  server: sg12.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 52"
+  server: ir03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 53"
+  server: sg14.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 54"
+  server: kr02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 55"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 56"
+  server: krgame01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 57"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 58"
+  server: transit1.fanqiang.eu
+  port: 15045
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 59"
+  server: ru03.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 60"
+  server: transit1.fanqiang.eu
+  port: 15007
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 61"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+  sni: hn.zfnode.org
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 62"
+  server: us8.fanqiang.eu
+  port: 19999
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 63"
+  server: sgp04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 64"
+  server: sgp08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 65"
+  server: hg05.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 66"
+  server: sgp06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 67"
+  server: sgp12.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 68"
+  server: sg07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 69"
+  server: transit1.fanqiang.eu
+  port: 15006
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 70"
+  server: sg18.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 71"
+  server: ca01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 72"
+  server: sgp02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 73"
+  server: hkhe09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 74"
+  server: hg02.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 75"
+  server: tw04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 76"
+  server: sg13.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 77"
+  server: 125.59.195.6
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 78"
+  server: twgame02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 79"
+  server: sgp10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 80"
+  server: twgame01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 81"
+  server: hgc07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 82"
+  server: hgc06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 83"
+  server: hkhe03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 84"
+  server: in08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 85"
+  server: sg19.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 86"
+  server: twgame08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 87"
+  server: twgame03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 88"
+  server: tw09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 89"
+  server: fr01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 90"
+  server: krgame08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 91"
+  server: hkhe06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 92"
+  server: krgame04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 93"
+  server: in01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 94"
+  server: in04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 95"
+  server: uk06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 96"
+  server: sg02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 97"
+  server: hkhe01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 98"
+  server: kr07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 99"
+  server: hg04.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 100"
+  server: sg04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 101"
+  server: in07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 102"
+  server: hkhe04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 103"
+  server: ir01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 104"
+  server: sg10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 105"
+  server: tw07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 106"
+  server: uk02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 107"
+  server: kr08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 108"
+  server: sg05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 109"
+  server: ca02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- name: "\U0001F1E8\U0001F1F3 CN 110"
+  server: 120.241.236.93
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3 CN"
+  port: 46061
+  password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c
+  skip-cert-verify: true
+  udp: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 111"
+  server: sg03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 112"
+  server: twgame06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 113"
+  server: tw02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 114"
+  server: in09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 115"
+  server: au02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 116"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+  sni: edge.apple.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 117"
+  server: twct09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 118"
+  server: sg01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 119"
+  server: krgame10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 120"
+  server: sgp01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 121"
+  server: uk01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 122"
+  server: sg20.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 123"
+  server: au03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 124"
+  server: krgame02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 125"
+  server: krgame05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 126"
+  server: kr05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 127"
+  server: tw10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 128"
+  server: sg08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 129"
+  server: sg16.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 130"
+  server: sg15.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 131"
+  server: krgame03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 132"
+  server: ru01.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 133"
+  server: krgame06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 134"
+  server: kr09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 135"
+  server: hgc10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 136"
+  server: uk05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 137"
+  server: ca05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 138"
+  server: uk03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 139"
+  server: twgame04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 140"
+  server: hkhe07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 141"
+  server: hgc08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 142"
+  server: fr04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 143"
+  server: kr06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 144"
+  server: hgc01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 145"
+  server: 59.148.152.78
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 146"
+  server: hg01.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 147"
+  server: uk04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 148"
+  server: au05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 149"
+  server: ir05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 150"
+  server: twct03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 151"
+  server: hkhe02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 152"
+  server: fr02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 153"
+  server: krgame09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 154"
+  server: ir04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 155"
+  server: ca03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 156"
+  server: hkhe08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 157"
+  server: 120.241.236.93
+  port: 34955
+  password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 158"
+  server: twgame07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 159"
+  server: twct01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 160"
+  server: cm.3sx.xyz
+  port: 12305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 161"
+  server: transit1.fanqiang.eu
+  port: 15008
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 162"
+  server: tw01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 163"
+  server: krgame07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 164"
+  server: kr01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 165"
+  server: twgame10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 166"
+  server: iepl.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 167"
+  server: au01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 168"
+  server: sg17.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 169"
+  server: tw08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 170"
+  server: sg06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 171"
+  server: twct06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 172"
+  server: twgame05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 173"
+  server: ca04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 174"
+  server: hgc03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 175"
+  server: pvcc01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 176"
+  server: 125.59.195.6
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 177"
+  server: us02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 178"
+  server: us08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 179"
+  server: iepl.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 180"
+  server: cmb.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 181"
+  server: iepl.3sx.xyz
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 182"
+  server: sgp05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 183"
+  server: cmb.3sx.xyz
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 184"
+  server: sgp03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 185"
+  server: kr03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 186"
+  server: kr10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 187"
+  server: sg09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 188"
+  server: cm.3sx.xyz
+  port: 12305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 189"
+  server: iepl.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 190"
+  server: us03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 191"
+  server: us06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 192"
+  server: twct05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 193"
+  server: hgc09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 194"
+  server: cm.3sx.xyz
+  port: 12311
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 195"
+  server: us10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 196"
+  server: us04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 197"
+  server: sgp09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 198"
+  server: us07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 199"
+  server: sg11.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 200"
+  server: us09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 201"
+  server: iepl.3sx.xyz
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 202"
+  server: cmb.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 203"
+  server: cm.3sx.xyz
+  port: 21001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 204"
+  server: iepl.3sx.xyz
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 205"
+  server: cmb.3sx.xyz
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 206"
+  server: iepl.3sx.xyz
+  port: 21001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 207"
+  server: us01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 208"
+  server: us05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 209"
+  server: cm.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 210"
+  server: cm.3sx.xyz
+  port: 21004
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 211"
+  server: cm.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 212"
+  server: cmb.3sx.xyz
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 213"
+  server: iepl.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 214"
+  server: cm.3sx.xyz
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 215"
+  server: cmb.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 216"
+  server: cm.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 217"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 218"
+  server: cmb.3sx.xyz
+  port: 21001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 219"
+  server: cm.3sx.xyz
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 220"
+  server: cm.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 221"
+  server: cm.3sx.xyz
+  port: 61024
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 222"
+  server: cmb.3sx.xyz
+  port: 31002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 223"
+  server: iepl.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 224"
+  server: 116.129.254.212
+  port: 48610
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=
+  protocol-param: 1062:tLkKEk
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 225"
+  server: zq-vip-05.com
+  port: 443
+  password: 7TFhMMPRFjkEe9Bl
+  udp: true
+  skip-cert-verify: true
+  sni: zq-vip-05.com
+- name: "\U0001F1E8\U0001F1F3 CN 226"
+  server: sg-cn.teacher2050.com
+  type: trojan
+  country: "\U0001F1E8\U0001F1F3CN"
+  port: 43508
+  password: E44523FE-B9E4-BD49-AEAF-DBABE701D016
+  skip-cert-verify: true
+  udp: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 227"
+  server: sg-cn.teacher2050.com
+  port: 43508
+  password: E44523FE-B9E4-BD49-AEAF-DBABE701D016
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 228"
+  server: sg-cn.teacher2050.com
+  port: 43508
+  password: E44523FE-B9E4-BD49-AEAF-DBABE701D016
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 229"
+  server: 116.129.254.64
+  port: 20111
+  protocol: auth_aes128_sha1
+  cipher: chacha20-ietf
+  obfs: http_simple
+  password: download.microso
+  obfs-param: WkVkV2MxcFhaSGxaVnpCMVdUSm9hR0p0Tld4aVF6VTFaVzFPYzJJelZtcz0=
+  protocol-param: 9892:W1QZ48
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 230"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 231"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 232"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 233"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 234"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 235"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 236"
+  server: 116.129.254.212
+  port: 48610
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=
+  protocol-param: 1062:tLkKEk
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 237"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 238"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 239"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 240"
+  server: transit1.fanqiang.eu
+  port: 15021
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 241"
+  server: 125.59.195.6
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 242"
+  server: transit1.fanqiang.eu
+  port: 15004
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 243"
+  server: transit1.fanqiang.eu
+  port: 15039
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 244"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 245"
+  server: jgwdj3.gaox.ml
+  port: 443
+  password: da777aae-defb-41d0-a183-2c27da2b4677
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 246"
+  server: transit1.fanqiang.eu
+  port: 15045
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 247"
+  server: transit1.fanqiang.eu
+  port: 15017
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 248"
+  server: transit1.fanqiang.eu
+  port: 15022
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 249"
+  server: cmb.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 250"
+  server: transit1.fanqiang.eu
+  port: 15020
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 251"
+  server: cm.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 252"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 253"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 254"
+  server: 59.148.152.78
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 255"
+  server: 59.148.152.78
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 256"
+  server: transit1.fanqiang.eu
+  port: 15019
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 257"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 258"
+  server: transit1.fanqiang.eu
+  port: 15006
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 259"
+  server: 103.117.102.8
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 260"
+  server: transit1.fanqiang.eu
+  port: 15007
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 261"
+  server: 103.117.102.96
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 262"
+  server: transit1.fanqiang.eu
+  port: 15008
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 263"
+  server: cmb.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 264"
+  server: 116.129.254.212
+  port: 48620
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=
+  protocol-param: 1062:tLkKEk
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 265"
+  server: cmb.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 266"
+  server: transit1.fanqiang.eu
+  port: 15009
+  password: 7259391b-9f01-4ede-90dc-3955cf1c4998
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 267"
+  server: iepl.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 268"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 269"
+  server: cmb.3sx.xyz
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 270"
+  server: cm.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 271"
+  server: 154.3.35.129
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 272"
+  server: cmb.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: d80412a5-1757-48a5-b493-e2de1265cc11
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 273"
+  server: sg-cn.teacher2050.com
+  port: 43508
+  password: E44523FE-B9E4-BD49-AEAF-DBABE701D016
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 274"
+  server: cm.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 275"
+  server: jgwdj3.gaox.ml
+  port: 443
+  password: da777aae-defb-41d0-a183-2c27da2b4677
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 276"
+  server: 91.243.81.161
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 277"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 278"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+  sni: edge.apple.com
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 279"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+  sni: bai-piao-wang-zhe10.98848.xyz
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 280"
+  server: jgwdb3.gaox.ml
+  port: 443
+  password: 8d2d5953-d649-4034-94f2-72f2df2623da
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 281"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 282"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+  sni: edge.apple.com
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 283"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 284"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 285"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 286"
+  server: azhk.n.optage.moe
+  port: 62500
+  password: d3c34184-e1b5-42d0-8f52-d89c8a095301
+  udp: true
+  skip-cert-verify: true
+  sni: azhk.n.optage.moe
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 287"
+  server: ocijp.n.optage.moe
+  port: 62500
+  password: d3c34184-e1b5-42d0-8f52-d89c8a095301
+  udp: true
+  skip-cert-verify: true
+  sni: ocijp.n.optage.moe
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 288"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 289"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 290"
+  server: sg-cn.teacher2050.com
+  port: 43508
+  password: E44523FE-B9E4-BD49-AEAF-DBABE701D016
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 291"
+  server: 120.241.236.93
+  port: 46061
+  password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 292"
+  server: 116.129.254.212
+  port: 48606
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  protocol-param: 1062:tLkKEk
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 293"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 294"
+  server: 116.129.254.212
+  port: 48619
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==
+  protocol-param: 1062:tLkKEk
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 295"
+  server: 116.129.254.212
+  port: 48612
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==
+  protocol-param: 1062:tLkKEk
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 296"
+  server: 116.129.254.212
+  port: 48603
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpKUFE9PQ==
+  protocol-param: 1062:tLkKEk
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 297"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 298"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 299"
+  server: sg13.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 300"
+  server: fr05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 301"
+  server: hgc04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 302"
+  server: au04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 303"
+  server: krgame01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 304"
+  server: test01.alderlake.gay
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 305"
+  server: hgc05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 306"
+  server: ir02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 307"
+  server: hgc02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 308"
+  server: in05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 309"
+  server: sg14.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 310"
+  server: uk02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 311"
+  server: kr02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 312"
+  server: tw08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 313"
+  server: twgame10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 314"
+  server: twct07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 315"
+  server: fr03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 316"
+  server: tw10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 317"
+  server: twct10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 318"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 319"
+  server: tw02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 320"
+  server: twct01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 321"
+  server: ru03.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 322"
+  server: twct09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 323"
+  server: tw01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 324"
+  server: ru04.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 325"
+  server: twgame05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 326"
+  server: twgame09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 327"
+  server: twct08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 328"
+  server: twgame08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 329"
+  server: twct03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 330"
+  server: ru02.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 331"
+  server: tw05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 332"
+  server: hg02.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 333"
+  server: sgp04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 334"
+  server: sgp02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 335"
+  server: sgp06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 336"
+  server: sgp12.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 337"
+  server: twgame06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 338"
+  server: sgp08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 339"
+  server: sgp10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 340"
+  server: twct02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 341"
+  server: twgame02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 342"
+  server: twgame03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 343"
+  server: twct11.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 344"
+  server: hg05.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 345"
+  server: twgame01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 346"
+  server: sgp07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 347"
+  server: tw07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 348"
+  server: twct06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 349"
+  server: twgame04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 350"
+  server: tw09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 351"
+  server: twgame07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 352"
+  server: in03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 353"
+  server: ca01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 354"
+  server: tw03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 355"
+  server: in06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 356"
+  server: au02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 357"
+  server: sgp13.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 358"
+  server: ca03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 359"
+  server: ca02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 360"
+  server: sg04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 361"
+  server: in01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 362"
+  server: hkhe06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 363"
+  server: hg04.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 364"
+  server: krgame07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 365"
+  server: uk06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 366"
+  server: sg12.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 367"
+  server: krgame02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 368"
+  server: in02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 369"
+  server: us10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 370"
+  server: krgame06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 371"
+  server: kr07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 372"
+  server: in08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 373"
+  server: ir01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 374"
+  server: us08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 375"
+  server: kr08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 376"
+  server: krgame04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 377"
+  server: us04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 378"
+  server: us02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 379"
+  server: sgp01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 380"
+  server: hgc01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 381"
+  server: krgame03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 382"
+  server: hkhe09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 383"
+  server: hkhe04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 384"
+  server: fr04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 385"
+  server: uk01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 386"
+  server: au03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 387"
+  server: sg15.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 388"
+  server: ca04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 389"
+  server: krgame08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 390"
+  server: us06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 391"
+  server: sg07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 392"
+  server: in09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 393"
+  server: krgame05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 394"
+  server: us03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 395"
+  server: us01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 396"
+  server: in04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 397"
+  server: kr09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 398"
+  server: kr06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 399"
+  server: hgc08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 400"
+  server: sg11.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 401"
+  server: sg17.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 402"
+  server: krgame09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 403"
+  server: kr05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 404"
+  server: uk04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 405"
+  server: us07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 406"
+  server: us05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 407"
+  server: kr10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 408"
+  server: uk03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 409"
+  server: ca05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 410"
+  server: us09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 411"
+  server: ru01.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 412"
+  server: sgp09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 413"
+  server: hgc07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 414"
+  server: sgp03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 415"
+  server: sg08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 416"
+  server: sg18.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 417"
+  server: ir03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 418"
+  server: hgc03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 419"
+  server: hkhe08.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 420"
+  server: ir05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 421"
+  server: twct04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 422"
+  server: hgc09.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 423"
+  server: fr01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 424"
+  server: sg20.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 425"
+  server: krgame10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 426"
+  server: pvcc01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 427"
+  server: ir04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 428"
+  server: in07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 429"
+  server: hkhe07.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 430"
+  server: sg03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 431"
+  server: sg10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 432"
+  server: uk05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 433"
+  server: kr01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 434"
+  server: 116.129.254.212
+  port: 48609
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  protocol-param: 1062:tLkKEk
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 435"
+  server: sg01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 436"
+  server: hkhe01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 437"
+  server: 116.129.254.212
+  port: 48607
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  protocol-param: 1062:tLkKEk
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 438"
+  server: hkhe02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 439"
+  server: sg06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 440"
+  server: hgc10.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 441"
+  server: kr03.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 442"
+  server: hg01.ptrecord.com
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 443"
+  server: 103.117.102.8
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 444"
+  server: 103.117.102.88
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 445"
+  server: au01.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 446"
+  server: 103.117.102.96
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 447"
+  server: cm.3sx.xyz
+  port: 12305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 448"
+  server: sg16.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 449"
+  server: sg05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 450"
+  server: sgp05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 451"
+  server: au05.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 452"
+  server: sg19.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 453"
+  server: 116.129.254.212
+  port: 48601
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: dC5tZS92cG5oYXQ
+  protocol-param: 1062:tLkKEk
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 454"
+  server: cm.3sx.xyz
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 455"
+  server: kr04.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 456"
+  server: hgc06.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 457"
+  server: sg02.mellanox.info
+  port: 18813
+  protocol: origin
+  cipher: rc4-md5
+  obfs: http_simple
+  password: ipt1x9
+  obfs-param: dC5tZS52cG5oYXQ
+  protocol-param: t.me/vpnpool
+- type: trojan
+  name: "\U0001F1F0\U0001F1F7 KR 458"
+  server: 52.231.75.156
+  port: 12580
+  password: 1c994b60-3574-4135-81c7-84187668b30f
+  udp: true
+  skip-cert-verify: true
+  sni: az100.qianchenzi.xyz
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 459"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 460"
+  server: cmb.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 461"
+  server: cm.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 462"
+  server: 116.129.254.212
+  port: 48616
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: ZEM1dFpTOTJjRzVvWVhR
+  protocol-param: 1062:tLkKEk
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 463"
+  server: cmb.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 464"
+  server: iepl.3sx.xyz
+  port: 21002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 465"
+  server: cm.3sx.xyz
+  port: 12311
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 466"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+  sni: edge.apple.com
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 467"
+  server: iepl.3sx.xyz
+  port: 61002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 468"
+  server: hn.zfnode.org
+  port: 30217
+  password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 469"
+  server: cm.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 470"
+  server: cmb.3sx.xyz
+  port: 61022
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 471"
+  server: iepl.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 472"
+  server: iepl.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 473"
+  server: cmb.3sx.xyz
+  port: 11002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 CN 474"
+  server: sg-cn.teacher2050.com
+  port: 43508
+  password: E44523FE-B9E4-BD49-AEAF-DBABE701D016
+  udp: true
+  skip-cert-verify: true
+  sni: sg-cn.teacher2050.com
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 475"
+  server: 116.129.254.212
+  port: 48604
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: V2tWTk1XUkdjRlJQVkVwcVVucFdkbGRXYUZJPQ
+  protocol-param: 1062:tLkKEk
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 476"
+  server: jgwdb3.gaox.ml
+  port: 443
+  password: 8d2d5953-d649-4034-94f2-72f2df2623da
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 477"
+  server: cm.3sx.xyz
+  port: 61024
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 478"
+  server: iepl.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1EF\U0001F1F5 JP 479"
+  server: s1.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 480"
+  server: 103.117.102.8
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 481"
+  server: 103.117.102.96
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 482"
+  server: cm.3sx.xyz
+  port: 11002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1F8\U0001F1EC SG 483"
+  server: 91.243.81.19
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 484"
+  server: cm.3sx.xyz
+  port: 41002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 485"
+  server: 59.148.152.78
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 486"
+  server: 59.148.152.78
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 487"
+  server: iepl.3sx.xyz
+  port: 31002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 488"
+  server: cmb.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 489"
+  server: iepl.3sx.xyz
+  port: 21001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 490"
+  server: iepl.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 491"
+  server: 125.59.195.6
+  port: 12306
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 492"
+  server: cmb.3sx.xyz
+  port: 21004
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 493"
+  server: cm.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 494"
+  server: cm.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 495"
+  server: cm.3sx.xyz
+  port: 21005
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 496"
+  server: iepl.3sx.xyz
+  port: 11002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 497"
+  server: 116.129.254.212
+  port: 48610
+  protocol: auth_aes128_sha1
+  cipher: aes-256-cfb
+  obfs: http_simple
+  password: GjRQkK
+  obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=
+  protocol-param: 1062:tLkKEk
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 498"
+  server: iepl.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 499"
+  server: cmb.3sx.xyz
+  port: 61001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 500"
+  server: iepl.3sx.xyz
+  port: 41001
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 501"
+  server: cmb.3sx.xyz
+  port: 31002
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 502"
+  server: bai-piao-wang-zhe10.98848.xyz
+  port: 48240
+  password: c8bae3de-16ed-4247-8a99-f38ef79a4b51
+  udp: true
+  skip-cert-verify: true
+- type: ss
+  name: "\U0001F1E8\U0001F1F3 CN 503"
+  server: cmb.3sx.xyz
+  port: 21003
+  cipher: chacha20-ietf-poly1305
+  password: e6c107d1-ca7a-4d4e-bf8d-7ca76a920457
+- type: trojan
+  name: "\U0001F1E6\U0001F1FA AU 504"
+  server: au2-3.nigirocloud.com
+  port: 443
+  password: 3yFq7NCP53mVfpXJz3
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1E8\U0001F1F3 HK 505"
+  server: anonymousnetwork.ga
+  port: 443
+  password: Roy.201314
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 506"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 507"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+- type: trojan
+  name: "\U0001F1FA\U0001F1F8 US 508"
+  server: s3.hazz.win
+  port: 12340
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  udp: true
+  skip-cert-verify: true
+proxy-groups:
+- name: automatic
+  type: url-test
+  proxies:
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1E8\U0001F1F3 HK 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1E8\U0001F1F3 CN 16"
+  - "\U0001F1E8\U0001F1F3 HK 17"
+  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 HK 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
+  - "\U0001F1E8\U0001F1F3 CN 21"
+  - "\U0001F1E8\U0001F1F3 CN 22"
+  - "\U0001F1FA\U0001F1F8 US 23"
+  - "\U0001F1E8\U0001F1F3 CN 24"
+  - "\U0001F1E8\U0001F1F3 CN 25"
+  - "\U0001F1E8\U0001F1F3 CN 26"
+  - "\U0001F1FA\U0001F1F8 US 27"
+  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1FA\U0001F1F8 US 29"
+  - "\U0001F1FA\U0001F1F8 US 30"
+  - "\U0001F1E8\U0001F1F3 CN 31"
+  - "\U0001F1E8\U0001F1F3 CN 32"
+  - "\U0001F1FA\U0001F1F8 US 33"
+  - "\U0001F1E8\U0001F1F3 CN 34"
+  - "\U0001F1E8\U0001F1F3 CN 35"
+  - "\U0001F1E8\U0001F1F3 HK 36"
+  - "\U0001F1FA\U0001F1F8 US 37"
+  - "\U0001F1E8\U0001F1F3 CN 38"
+  - "\U0001F1E8\U0001F1F3 CN 39"
+  - "\U0001F1E8\U0001F1F3 CN 40"
+  - "\U0001F1FA\U0001F1F8 US 41"
+  - "\U0001F1E8\U0001F1F3 HK 42"
+  - "\U0001F1E8\U0001F1F3 CN 43"
+  - "\U0001F1E8\U0001F1F3 CN 44"
+  - "\U0001F1E8\U0001F1F3 CN 45"
+  - "\U0001F1E8\U0001F1F3 CN 46"
+  - "\U0001F1E8\U0001F1F3 CN 47"
+  - "\U0001F1E8\U0001F1F3 CN 48"
+  - "\U0001F1E8\U0001F1F3 HK 49"
+  - "\U0001F1E8\U0001F1F3 CN 50"
+  - "\U0001F1E8\U0001F1F3 CN 51"
+  - "\U0001F1E8\U0001F1F3 CN 52"
+  - "\U0001F1E8\U0001F1F3 CN 53"
+  - "\U0001F1E8\U0001F1F3 CN 54"
+  - "\U0001F1FA\U0001F1F8 US 55"
+  - "\U0001F1E8\U0001F1F3 CN 56"
+  - "\U0001F1FA\U0001F1F8 US 57"
+  - "\U0001F1E8\U0001F1F3 HK 58"
+  - "\U0001F1E8\U0001F1F3 CN 59"
+  - "\U0001F1E8\U0001F1F3 HK 60"
+  - "\U0001F1E8\U0001F1F3 CN 61"
+  - "\U0001F1FA\U0001F1F8 US 62"
+  - "\U0001F1E8\U0001F1F3 CN 63"
+  - "\U0001F1E8\U0001F1F3 CN 64"
+  - "\U0001F1E8\U0001F1F3 CN 65"
+  - "\U0001F1E8\U0001F1F3 CN 66"
+  - "\U0001F1E8\U0001F1F3 CN 67"
+  - "\U0001F1E8\U0001F1F3 CN 68"
+  - "\U0001F1E8\U0001F1F3 HK 69"
+  - "\U0001F1E8\U0001F1F3 CN 70"
+  - "\U0001F1E8\U0001F1F3 CN 71"
+  - "\U0001F1E8\U0001F1F3 CN 72"
+  - "\U0001F1E8\U0001F1F3 CN 73"
+  - "\U0001F1E8\U0001F1F3 CN 74"
+  - "\U0001F1E8\U0001F1F3 CN 75"
+  - "\U0001F1E8\U0001F1F3 CN 76"
+  - "\U0001F1E8\U0001F1F3 HK 77"
+  - "\U0001F1E8\U0001F1F3 CN 78"
+  - "\U0001F1E8\U0001F1F3 CN 79"
+  - "\U0001F1E8\U0001F1F3 CN 80"
+  - "\U0001F1E8\U0001F1F3 CN 81"
+  - "\U0001F1E8\U0001F1F3 CN 82"
+  - "\U0001F1E8\U0001F1F3 CN 83"
+  - "\U0001F1E8\U0001F1F3 CN 84"
+  - "\U0001F1E8\U0001F1F3 CN 85"
+  - "\U0001F1E8\U0001F1F3 CN 86"
+  - "\U0001F1E8\U0001F1F3 CN 87"
+  - "\U0001F1E8\U0001F1F3 CN 88"
+  - "\U0001F1E8\U0001F1F3 CN 89"
+  - "\U0001F1E8\U0001F1F3 CN 90"
+  - "\U0001F1E8\U0001F1F3 CN 91"
+  - "\U0001F1E8\U0001F1F3 CN 92"
+  - "\U0001F1E8\U0001F1F3 CN 93"
+  - "\U0001F1E8\U0001F1F3 CN 94"
+  - "\U0001F1E8\U0001F1F3 CN 95"
+  - "\U0001F1E8\U0001F1F3 CN 96"
+  - "\U0001F1E8\U0001F1F3 CN 97"
+  - "\U0001F1E8\U0001F1F3 CN 98"
+  - "\U0001F1E8\U0001F1F3 CN 99"
+  - "\U0001F1E8\U0001F1F3 CN 100"
+  - "\U0001F1E8\U0001F1F3 CN 101"
+  - "\U0001F1E8\U0001F1F3 CN 102"
+  - "\U0001F1E8\U0001F1F3 CN 103"
+  - "\U0001F1E8\U0001F1F3 CN 104"
+  - "\U0001F1E8\U0001F1F3 CN 105"
+  - "\U0001F1E8\U0001F1F3 CN 106"
+  - "\U0001F1E8\U0001F1F3 CN 107"
+  - "\U0001F1E8\U0001F1F3 CN 108"
+  - "\U0001F1E8\U0001F1F3 CN 109"
+  - "\U0001F1E8\U0001F1F3 CN 110"
+  - "\U0001F1E8\U0001F1F3 CN 111"
+  - "\U0001F1E8\U0001F1F3 CN 112"
+  - "\U0001F1E8\U0001F1F3 CN 113"
+  - "\U0001F1E8\U0001F1F3 CN 114"
+  - "\U0001F1E8\U0001F1F3 CN 115"
+  - "\U0001F1FA\U0001F1F8 US 116"
+  - "\U0001F1E8\U0001F1F3 CN 117"
+  - "\U0001F1E8\U0001F1F3 CN 118"
+  - "\U0001F1E8\U0001F1F3 CN 119"
+  - "\U0001F1E8\U0001F1F3 CN 120"
+  - "\U0001F1E8\U0001F1F3 CN 121"
+  - "\U0001F1E8\U0001F1F3 CN 122"
+  - "\U0001F1E8\U0001F1F3 CN 123"
+  - "\U0001F1E8\U0001F1F3 CN 124"
+  - "\U0001F1E8\U0001F1F3 CN 125"
+  - "\U0001F1E8\U0001F1F3 CN 126"
+  - "\U0001F1E8\U0001F1F3 CN 127"
+  - "\U0001F1E8\U0001F1F3 CN 128"
+  - "\U0001F1E8\U0001F1F3 CN 129"
+  - "\U0001F1E8\U0001F1F3 CN 130"
+  - "\U0001F1E8\U0001F1F3 CN 131"
+  - "\U0001F1E8\U0001F1F3 CN 132"
+  - "\U0001F1E8\U0001F1F3 CN 133"
+  - "\U0001F1E8\U0001F1F3 CN 134"
+  - "\U0001F1E8\U0001F1F3 CN 135"
+  - "\U0001F1E8\U0001F1F3 CN 136"
+  - "\U0001F1E8\U0001F1F3 CN 137"
+  - "\U0001F1E8\U0001F1F3 CN 138"
+  - "\U0001F1E8\U0001F1F3 CN 139"
+  - "\U0001F1E8\U0001F1F3 CN 140"
+  - "\U0001F1E8\U0001F1F3 CN 141"
+  - "\U0001F1E8\U0001F1F3 CN 142"
+  - "\U0001F1E8\U0001F1F3 CN 143"
+  - "\U0001F1E8\U0001F1F3 CN 144"
+  - "\U0001F1E8\U0001F1F3 HK 145"
+  - "\U0001F1E8\U0001F1F3 CN 146"
+  - "\U0001F1E8\U0001F1F3 CN 147"
+  - "\U0001F1E8\U0001F1F3 CN 148"
+  - "\U0001F1E8\U0001F1F3 CN 149"
+  - "\U0001F1E8\U0001F1F3 CN 150"
+  - "\U0001F1E8\U0001F1F3 CN 151"
+  - "\U0001F1E8\U0001F1F3 CN 152"
+  - "\U0001F1E8\U0001F1F3 CN 153"
+  - "\U0001F1E8\U0001F1F3 CN 154"
+  - "\U0001F1E8\U0001F1F3 CN 155"
+  - "\U0001F1E8\U0001F1F3 CN 156"
+  - "\U0001F1E8\U0001F1F3 CN 157"
+  - "\U0001F1E8\U0001F1F3 CN 158"
+  - "\U0001F1E8\U0001F1F3 CN 159"
+  - "\U0001F1E8\U0001F1F3 CN 160"
+  - "\U0001F1E8\U0001F1F3 HK 161"
+  - "\U0001F1E8\U0001F1F3 CN 162"
+  - "\U0001F1E8\U0001F1F3 CN 163"
+  - "\U0001F1E8\U0001F1F3 CN 164"
+  - "\U0001F1E8\U0001F1F3 CN 165"
+  - "\U0001F1E8\U0001F1F3 CN 166"
+  - "\U0001F1E8\U0001F1F3 CN 167"
+  - "\U0001F1E8\U0001F1F3 CN 168"
+  - "\U0001F1E8\U0001F1F3 CN 169"
+  - "\U0001F1E8\U0001F1F3 CN 170"
+  - "\U0001F1E8\U0001F1F3 CN 171"
+  - "\U0001F1E8\U0001F1F3 CN 172"
+  - "\U0001F1E8\U0001F1F3 CN 173"
+  - "\U0001F1E8\U0001F1F3 CN 174"
+  - "\U0001F1E8\U0001F1F3 CN 175"
+  - "\U0001F1E8\U0001F1F3 HK 176"
+  - "\U0001F1E8\U0001F1F3 CN 177"
+  - "\U0001F1E8\U0001F1F3 CN 178"
+  - "\U0001F1E8\U0001F1F3 CN 179"
+  - "\U0001F1E8\U0001F1F3 CN 180"
+  - "\U0001F1E8\U0001F1F3 CN 181"
+  - "\U0001F1E8\U0001F1F3 CN 182"
+  - "\U0001F1E8\U0001F1F3 CN 183"
+  - "\U0001F1E8\U0001F1F3 CN 184"
+  - "\U0001F1E8\U0001F1F3 CN 185"
+  - "\U0001F1E8\U0001F1F3 CN 186"
+  - "\U0001F1E8\U0001F1F3 CN 187"
+  - "\U0001F1E8\U0001F1F3 CN 188"
+  - "\U0001F1E8\U0001F1F3 CN 189"
+  - "\U0001F1E8\U0001F1F3 CN 190"
+  - "\U0001F1E8\U0001F1F3 CN 191"
+  - "\U0001F1E8\U0001F1F3 CN 192"
+  - "\U0001F1E8\U0001F1F3 CN 193"
+  - "\U0001F1E8\U0001F1F3 CN 194"
+  - "\U0001F1E8\U0001F1F3 CN 195"
+  - "\U0001F1E8\U0001F1F3 CN 196"
+  - "\U0001F1E8\U0001F1F3 CN 197"
+  - "\U0001F1E8\U0001F1F3 CN 198"
+  - "\U0001F1E8\U0001F1F3 CN 199"
+  - "\U0001F1E8\U0001F1F3 CN 200"
+  - "\U0001F1E8\U0001F1F3 CN 201"
+  - "\U0001F1E8\U0001F1F3 CN 202"
+  - "\U0001F1E8\U0001F1F3 CN 203"
+  - "\U0001F1E8\U0001F1F3 CN 204"
+  - "\U0001F1E8\U0001F1F3 CN 205"
+  - "\U0001F1E8\U0001F1F3 CN 206"
+  - "\U0001F1E8\U0001F1F3 CN 207"
+  - "\U0001F1E8\U0001F1F3 CN 208"
+  - "\U0001F1E8\U0001F1F3 CN 209"
+  - "\U0001F1E8\U0001F1F3 CN 210"
+  - "\U0001F1E8\U0001F1F3 CN 211"
+  - "\U0001F1E8\U0001F1F3 CN 212"
+  - "\U0001F1E8\U0001F1F3 CN 213"
+  - "\U0001F1E8\U0001F1F3 CN 214"
+  - "\U0001F1E8\U0001F1F3 CN 215"
+  - "\U0001F1E8\U0001F1F3 CN 216"
+  - "\U0001F1E8\U0001F1F3 CN 217"
+  - "\U0001F1E8\U0001F1F3 CN 218"
+  - "\U0001F1E8\U0001F1F3 CN 219"
+  - "\U0001F1E8\U0001F1F3 CN 220"
+  - "\U0001F1E8\U0001F1F3 CN 221"
+  - "\U0001F1E8\U0001F1F3 CN 222"
+  - "\U0001F1E8\U0001F1F3 CN 223"
+  - "\U0001F1E8\U0001F1F3 CN 224"
+  - "\U0001F1E8\U0001F1F3 HK 225"
+  - "\U0001F1E8\U0001F1F3 CN 226"
+  - "\U0001F1E8\U0001F1F3 CN 227"
+  - "\U0001F1E8\U0001F1F3 CN 228"
+  - "\U0001F1E8\U0001F1F3 CN 229"
+  - "\U0001F1E8\U0001F1F3 CN 230"
+  - "\U0001F1E8\U0001F1F3 CN 231"
+  - "\U0001F1FA\U0001F1F8 US 232"
+  - "\U0001F1FA\U0001F1F8 US 233"
+  - "\U0001F1FA\U0001F1F8 US 234"
+  - "\U0001F1FA\U0001F1F8 US 235"
+  - "\U0001F1E8\U0001F1F3 CN 236"
+  - "\U0001F1FA\U0001F1F8 US 237"
+  - "\U0001F1FA\U0001F1F8 US 238"
+  - "\U0001F1E8\U0001F1F3 CN 239"
+  - "\U0001F1E8\U0001F1F3 HK 240"
+  - "\U0001F1E8\U0001F1F3 HK 241"
+  - "\U0001F1E8\U0001F1F3 HK 242"
+  - "\U0001F1E8\U0001F1F3 HK 243"
+  - "\U0001F1EF\U0001F1F5 JP 244"
+  - "\U0001F1EF\U0001F1F5 JP 245"
+  - "\U0001F1E8\U0001F1F3 HK 246"
+  - "\U0001F1E8\U0001F1F3 HK 247"
+  - "\U0001F1E8\U0001F1F3 HK 248"
+  - "\U0001F1E8\U0001F1F3 CN 249"
+  - "\U0001F1E8\U0001F1F3 HK 250"
+  - "\U0001F1E8\U0001F1F3 CN 251"
+  - "\U0001F1FA\U0001F1F8 US 252"
+  - "\U0001F1E8\U0001F1F3 CN 253"
+  - "\U0001F1E8\U0001F1F3 HK 254"
+  - "\U0001F1E8\U0001F1F3 HK 255"
+  - "\U0001F1E8\U0001F1F3 HK 256"
+  - "\U0001F1EF\U0001F1F5 JP 257"
+  - "\U0001F1E8\U0001F1F3 HK 258"
+  - "\U0001F1E8\U0001F1F3 HK 259"
+  - "\U0001F1E8\U0001F1F3 HK 260"
+  - "\U0001F1E8\U0001F1F3 HK 261"
+  - "\U0001F1E8\U0001F1F3 HK 262"
+  - "\U0001F1E8\U0001F1F3 CN 263"
+  - "\U0001F1E8\U0001F1F3 CN 264"
+  - "\U0001F1E8\U0001F1F3 CN 265"
+  - "\U0001F1E8\U0001F1F3 HK 266"
+  - "\U0001F1E8\U0001F1F3 CN 267"
+  - "\U0001F1FA\U0001F1F8 US 268"
+  - "\U0001F1E8\U0001F1F3 CN 269"
+  - "\U0001F1E8\U0001F1F3 CN 270"
+  - "\U0001F1E8\U0001F1F3 HK 271"
+  - "\U0001F1E8\U0001F1F3 CN 272"
+  - "\U0001F1E8\U0001F1F3 CN 273"
+  - "\U0001F1E8\U0001F1F3 CN 274"
+  - "\U0001F1EF\U0001F1F5 JP 275"
+  - "\U0001F1F8\U0001F1EC SG 276"
+  - "\U0001F1E8\U0001F1F3 CN 277"
+  - "\U0001F1EF\U0001F1F5 JP 278"
+  - "\U0001F1FA\U0001F1F8 US 279"
+  - "\U0001F1EF\U0001F1F5 JP 280"
+  - "\U0001F1E8\U0001F1F3 CN 281"
+  - "\U0001F1EF\U0001F1F5 JP 282"
+  - "\U0001F1FA\U0001F1F8 US 283"
+  - "\U0001F1FA\U0001F1F8 US 284"
+  - "\U0001F1EF\U0001F1F5 JP 285"
+  - "\U0001F1E8\U0001F1F3 HK 286"
+  - "\U0001F1EF\U0001F1F5 JP 287"
+  - "\U0001F1EF\U0001F1F5 JP 288"
+  - "\U0001F1FA\U0001F1F8 US 289"
+  - "\U0001F1E8\U0001F1F3 CN 290"
+  - "\U0001F1E8\U0001F1F3 CN 291"
+  - "\U0001F1E8\U0001F1F3 CN 292"
+  - "\U0001F1FA\U0001F1F8 US 293"
+  - "\U0001F1E8\U0001F1F3 CN 294"
+  - "\U0001F1E8\U0001F1F3 CN 295"
+  - "\U0001F1E8\U0001F1F3 CN 296"
+  - "\U0001F1FA\U0001F1F8 US 297"
+  - "\U0001F1E8\U0001F1F3 CN 298"
+  - "\U0001F1E8\U0001F1F3 CN 299"
+  - "\U0001F1E8\U0001F1F3 CN 300"
+  - "\U0001F1E8\U0001F1F3 CN 301"
+  - "\U0001F1E8\U0001F1F3 CN 302"
+  - "\U0001F1E8\U0001F1F3 CN 303"
+  - "\U0001F1E8\U0001F1F3 CN 304"
+  - "\U0001F1E8\U0001F1F3 CN 305"
+  - "\U0001F1E8\U0001F1F3 CN 306"
+  - "\U0001F1E8\U0001F1F3 CN 307"
+  - "\U0001F1E8\U0001F1F3 CN 308"
+  - "\U0001F1E8\U0001F1F3 CN 309"
+  - "\U0001F1E8\U0001F1F3 CN 310"
+  - "\U0001F1E8\U0001F1F3 CN 311"
+  - "\U0001F1E8\U0001F1F3 CN 312"
+  - "\U0001F1E8\U0001F1F3 CN 313"
+  - "\U0001F1E8\U0001F1F3 CN 314"
+  - "\U0001F1E8\U0001F1F3 CN 315"
+  - "\U0001F1E8\U0001F1F3 CN 316"
+  - "\U0001F1E8\U0001F1F3 CN 317"
+  - "\U0001F1EF\U0001F1F5 JP 318"
+  - "\U0001F1E8\U0001F1F3 CN 319"
+  - "\U0001F1E8\U0001F1F3 CN 320"
+  - "\U0001F1E8\U0001F1F3 CN 321"
+  - "\U0001F1E8\U0001F1F3 CN 322"
+  - "\U0001F1E8\U0001F1F3 CN 323"
+  - "\U0001F1E8\U0001F1F3 CN 324"
+  - "\U0001F1E8\U0001F1F3 CN 325"
+  - "\U0001F1E8\U0001F1F3 CN 326"
+  - "\U0001F1E8\U0001F1F3 CN 327"
+  - "\U0001F1E8\U0001F1F3 CN 328"
+  - "\U0001F1E8\U0001F1F3 CN 329"
+  - "\U0001F1E8\U0001F1F3 CN 330"
+  - "\U0001F1E8\U0001F1F3 CN 331"
+  - "\U0001F1E8\U0001F1F3 CN 332"
+  - "\U0001F1E8\U0001F1F3 CN 333"
+  - "\U0001F1E8\U0001F1F3 CN 334"
+  - "\U0001F1E8\U0001F1F3 CN 335"
+  - "\U0001F1E8\U0001F1F3 CN 336"
+  - "\U0001F1E8\U0001F1F3 CN 337"
+  - "\U0001F1E8\U0001F1F3 CN 338"
+  - "\U0001F1E8\U0001F1F3 CN 339"
+  - "\U0001F1E8\U0001F1F3 CN 340"
+  - "\U0001F1E8\U0001F1F3 CN 341"
+  - "\U0001F1E8\U0001F1F3 CN 342"
+  - "\U0001F1E8\U0001F1F3 CN 343"
+  - "\U0001F1E8\U0001F1F3 CN 344"
+  - "\U0001F1E8\U0001F1F3 CN 345"
+  - "\U0001F1E8\U0001F1F3 CN 346"
+  - "\U0001F1E8\U0001F1F3 CN 347"
+  - "\U0001F1E8\U0001F1F3 CN 348"
+  - "\U0001F1E8\U0001F1F3 CN 349"
+  - "\U0001F1E8\U0001F1F3 CN 350"
+  - "\U0001F1E8\U0001F1F3 CN 351"
+  - "\U0001F1E8\U0001F1F3 CN 352"
+  - "\U0001F1E8\U0001F1F3 CN 353"
+  - "\U0001F1E8\U0001F1F3 CN 354"
+  - "\U0001F1E8\U0001F1F3 CN 355"
+  - "\U0001F1E8\U0001F1F3 CN 356"
+  - "\U0001F1E8\U0001F1F3 CN 357"
+  - "\U0001F1E8\U0001F1F3 CN 358"
+  - "\U0001F1E8\U0001F1F3 CN 359"
+  - "\U0001F1E8\U0001F1F3 CN 360"
+  - "\U0001F1E8\U0001F1F3 CN 361"
+  - "\U0001F1E8\U0001F1F3 CN 362"
+  - "\U0001F1E8\U0001F1F3 CN 363"
+  - "\U0001F1E8\U0001F1F3 CN 364"
+  - "\U0001F1E8\U0001F1F3 CN 365"
+  - "\U0001F1E8\U0001F1F3 CN 366"
+  - "\U0001F1E8\U0001F1F3 CN 367"
+  - "\U0001F1E8\U0001F1F3 CN 368"
+  - "\U0001F1E8\U0001F1F3 CN 369"
+  - "\U0001F1E8\U0001F1F3 CN 370"
+  - "\U0001F1E8\U0001F1F3 CN 371"
+  - "\U0001F1E8\U0001F1F3 CN 372"
+  - "\U0001F1E8\U0001F1F3 CN 373"
+  - "\U0001F1E8\U0001F1F3 CN 374"
+  - "\U0001F1E8\U0001F1F3 CN 375"
+  - "\U0001F1E8\U0001F1F3 CN 376"
+  - "\U0001F1E8\U0001F1F3 CN 377"
+  - "\U0001F1E8\U0001F1F3 CN 378"
+  - "\U0001F1E8\U0001F1F3 CN 379"
+  - "\U0001F1E8\U0001F1F3 CN 380"
+  - "\U0001F1E8\U0001F1F3 CN 381"
+  - "\U0001F1E8\U0001F1F3 CN 382"
+  - "\U0001F1E8\U0001F1F3 CN 383"
+  - "\U0001F1E8\U0001F1F3 CN 384"
+  - "\U0001F1E8\U0001F1F3 CN 385"
+  - "\U0001F1E8\U0001F1F3 CN 386"
+  - "\U0001F1E8\U0001F1F3 CN 387"
+  - "\U0001F1E8\U0001F1F3 CN 388"
+  - "\U0001F1E8\U0001F1F3 CN 389"
+  - "\U0001F1E8\U0001F1F3 CN 390"
+  - "\U0001F1E8\U0001F1F3 CN 391"
+  - "\U0001F1E8\U0001F1F3 CN 392"
+  - "\U0001F1E8\U0001F1F3 CN 393"
+  - "\U0001F1E8\U0001F1F3 CN 394"
+  - "\U0001F1E8\U0001F1F3 CN 395"
+  - "\U0001F1E8\U0001F1F3 CN 396"
+  - "\U0001F1E8\U0001F1F3 CN 397"
+  - "\U0001F1E8\U0001F1F3 CN 398"
+  - "\U0001F1E8\U0001F1F3 CN 399"
+  - "\U0001F1E8\U0001F1F3 CN 400"
+  - "\U0001F1E8\U0001F1F3 CN 401"
+  - "\U0001F1E8\U0001F1F3 CN 402"
+  - "\U0001F1E8\U0001F1F3 CN 403"
+  - "\U0001F1E8\U0001F1F3 CN 404"
+  - "\U0001F1E8\U0001F1F3 CN 405"
+  - "\U0001F1E8\U0001F1F3 CN 406"
+  - "\U0001F1E8\U0001F1F3 CN 407"
+  - "\U0001F1E8\U0001F1F3 CN 408"
+  - "\U0001F1E8\U0001F1F3 CN 409"
+  - "\U0001F1E8\U0001F1F3 CN 410"
+  - "\U0001F1E8\U0001F1F3 CN 411"
+  - "\U0001F1E8\U0001F1F3 CN 412"
+  - "\U0001F1E8\U0001F1F3 CN 413"
+  - "\U0001F1E8\U0001F1F3 CN 414"
+  - "\U0001F1E8\U0001F1F3 CN 415"
+  - "\U0001F1E8\U0001F1F3 CN 416"
+  - "\U0001F1E8\U0001F1F3 CN 417"
+  - "\U0001F1E8\U0001F1F3 CN 418"
+  - "\U0001F1E8\U0001F1F3 CN 419"
+  - "\U0001F1E8\U0001F1F3 CN 420"
+  - "\U0001F1E8\U0001F1F3 CN 421"
+  - "\U0001F1E8\U0001F1F3 CN 422"
+  - "\U0001F1E8\U0001F1F3 CN 423"
+  - "\U0001F1E8\U0001F1F3 CN 424"
+  - "\U0001F1E8\U0001F1F3 CN 425"
+  - "\U0001F1E8\U0001F1F3 CN 426"
+  - "\U0001F1E8\U0001F1F3 CN 427"
+  - "\U0001F1E8\U0001F1F3 CN 428"
+  - "\U0001F1E8\U0001F1F3 CN 429"
+  - "\U0001F1E8\U0001F1F3 CN 430"
+  - "\U0001F1E8\U0001F1F3 CN 431"
+  - "\U0001F1E8\U0001F1F3 CN 432"
+  - "\U0001F1E8\U0001F1F3 CN 433"
+  - "\U0001F1E8\U0001F1F3 CN 434"
+  - "\U0001F1E8\U0001F1F3 CN 435"
+  - "\U0001F1E8\U0001F1F3 CN 436"
+  - "\U0001F1E8\U0001F1F3 CN 437"
+  - "\U0001F1E8\U0001F1F3 CN 438"
+  - "\U0001F1E8\U0001F1F3 CN 439"
+  - "\U0001F1E8\U0001F1F3 CN 440"
+  - "\U0001F1E8\U0001F1F3 CN 441"
+  - "\U0001F1E8\U0001F1F3 CN 442"
+  - "\U0001F1E8\U0001F1F3 HK 443"
+  - "\U0001F1E8\U0001F1F3 HK 444"
+  - "\U0001F1E8\U0001F1F3 CN 445"
+  - "\U0001F1E8\U0001F1F3 HK 446"
+  - "\U0001F1E8\U0001F1F3 CN 447"
+  - "\U0001F1E8\U0001F1F3 CN 448"
+  - "\U0001F1E8\U0001F1F3 CN 449"
+  - "\U0001F1E8\U0001F1F3 CN 450"
+  - "\U0001F1E8\U0001F1F3 CN 451"
+  - "\U0001F1E8\U0001F1F3 CN 452"
+  - "\U0001F1E8\U0001F1F3 CN 453"
+  - "\U0001F1E8\U0001F1F3 CN 454"
+  - "\U0001F1E8\U0001F1F3 CN 455"
+  - "\U0001F1E8\U0001F1F3 CN 456"
+  - "\U0001F1E8\U0001F1F3 CN 457"
+  - "\U0001F1F0\U0001F1F7 KR 458"
+  - "\U0001F1EF\U0001F1F5 JP 459"
+  - "\U0001F1E8\U0001F1F3 CN 460"
+  - "\U0001F1E8\U0001F1F3 CN 461"
+  - "\U0001F1E8\U0001F1F3 CN 462"
+  - "\U0001F1E8\U0001F1F3 CN 463"
+  - "\U0001F1E8\U0001F1F3 CN 464"
+  - "\U0001F1E8\U0001F1F3 CN 465"
+  - "\U0001F1FA\U0001F1F8 US 466"
+  - "\U0001F1E8\U0001F1F3 CN 467"
+  - "\U0001F1E8\U0001F1F3 CN 468"
+  - "\U0001F1E8\U0001F1F3 CN 469"
+  - "\U0001F1E8\U0001F1F3 CN 470"
+  - "\U0001F1E8\U0001F1F3 CN 471"
+  - "\U0001F1E8\U0001F1F3 CN 472"
+  - "\U0001F1E8\U0001F1F3 CN 473"
+  - "\U0001F1E8\U0001F1F3 CN 474"
+  - "\U0001F1E8\U0001F1F3 CN 475"
+  - "\U0001F1EF\U0001F1F5 JP 476"
+  - "\U0001F1E8\U0001F1F3 CN 477"
+  - "\U0001F1E8\U0001F1F3 CN 478"
+  - "\U0001F1EF\U0001F1F5 JP 479"
+  - "\U0001F1E8\U0001F1F3 HK 480"
+  - "\U0001F1E8\U0001F1F3 HK 481"
+  - "\U0001F1E8\U0001F1F3 CN 482"
+  - "\U0001F1F8\U0001F1EC SG 483"
+  - "\U0001F1E8\U0001F1F3 CN 484"
+  - "\U0001F1E8\U0001F1F3 HK 485"
+  - "\U0001F1E8\U0001F1F3 HK 486"
+  - "\U0001F1E8\U0001F1F3 CN 487"
+  - "\U0001F1E8\U0001F1F3 CN 488"
+  - "\U0001F1E8\U0001F1F3 CN 489"
+  - "\U0001F1E8\U0001F1F3 CN 490"
+  - "\U0001F1E8\U0001F1F3 HK 491"
+  - "\U0001F1E8\U0001F1F3 CN 492"
+  - "\U0001F1E8\U0001F1F3 CN 493"
+  - "\U0001F1E8\U0001F1F3 CN 494"
+  - "\U0001F1E8\U0001F1F3 CN 495"
+  - "\U0001F1E8\U0001F1F3 CN 496"
+  - "\U0001F1E8\U0001F1F3 CN 497"
+  - "\U0001F1E8\U0001F1F3 CN 498"
+  - "\U0001F1E8\U0001F1F3 CN 499"
+  - "\U0001F1E8\U0001F1F3 CN 500"
+  - "\U0001F1E8\U0001F1F3 CN 501"
+  - "\U0001F1FA\U0001F1F8 US 502"
+  - "\U0001F1E8\U0001F1F3 CN 503"
+  - "\U0001F1E6\U0001F1FA AU 504"
+  - "\U0001F1E8\U0001F1F3 HK 505"
+  - "\U0001F1FA\U0001F1F8 US 506"
+  - "\U0001F1FA\U0001F1F8 US 507"
+  - "\U0001F1FA\U0001F1F8 US 508"
+  url: https://www.google.com/favicon.ico
+  interval: 300
+- name: Proxy
+  type: select
+  proxies:
+  - automatic
+  - "\U0001F1FA\U0001F1F8 US 1"
+  - "\U0001F1FA\U0001F1F8 US 2"
+  - "\U0001F1FA\U0001F1F8 US 3"
+  - "\U0001F1FA\U0001F1F8 US 4"
+  - "\U0001F1FA\U0001F1F8 US 5"
+  - "\U0001F1E8\U0001F1F3 HK 6"
+  - "\U0001F1E8\U0001F1F3 CN 7"
+  - "\U0001F1E8\U0001F1F3 CN 8"
+  - "\U0001F1E8\U0001F1F3 CN 9"
+  - "\U0001F1E8\U0001F1F3 HK 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1FA\U0001F1F8 US 12"
+  - "\U0001F1E8\U0001F1F3 CN 13"
+  - "\U0001F1E8\U0001F1F3 HK 14"
+  - "\U0001F1E8\U0001F1F3 CN 15"
+  - "\U0001F1E8\U0001F1F3 CN 16"
+  - "\U0001F1E8\U0001F1F3 HK 17"
+  - "\U0001F1E8\U0001F1F3 CN 18"
+  - "\U0001F1E8\U0001F1F3 HK 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
+  - "\U0001F1E8\U0001F1F3 CN 21"
+  - "\U0001F1E8\U0001F1F3 CN 22"
+  - "\U0001F1FA\U0001F1F8 US 23"
+  - "\U0001F1E8\U0001F1F3 CN 24"
+  - "\U0001F1E8\U0001F1F3 CN 25"
+  - "\U0001F1E8\U0001F1F3 CN 26"
+  - "\U0001F1FA\U0001F1F8 US 27"
+  - "\U0001F1E8\U0001F1F3 CN 28"
+  - "\U0001F1FA\U0001F1F8 US 29"
+  - "\U0001F1FA\U0001F1F8 US 30"
+  - "\U0001F1E8\U0001F1F3 CN 31"
+  - "\U0001F1E8\U0001F1F3 CN 32"
+  - "\U0001F1FA\U0001F1F8 US 33"
+  - "\U0001F1E8\U0001F1F3 CN 34"
+  - "\U0001F1E8\U0001F1F3 CN 35"
+  - "\U0001F1E8\U0001F1F3 HK 36"
+  - "\U0001F1FA\U0001F1F8 US 37"
+  - "\U0001F1E8\U0001F1F3 CN 38"
+  - "\U0001F1E8\U0001F1F3 CN 39"
+  - "\U0001F1E8\U0001F1F3 CN 40"
+  - "\U0001F1FA\U0001F1F8 US 41"
+  - "\U0001F1E8\U0001F1F3 HK 42"
+  - "\U0001F1E8\U0001F1F3 CN 43"
+  - "\U0001F1E8\U0001F1F3 CN 44"
+  - "\U0001F1E8\U0001F1F3 CN 45"
+  - "\U0001F1E8\U0001F1F3 CN 46"
+  - "\U0001F1E8\U0001F1F3 CN 47"
+  - "\U0001F1E8\U0001F1F3 CN 48"
+  - "\U0001F1E8\U0001F1F3 HK 49"
+  - "\U0001F1E8\U0001F1F3 CN 50"
+  - "\U0001F1E8\U0001F1F3 CN 51"
+  - "\U0001F1E8\U0001F1F3 CN 52"
+  - "\U0001F1E8\U0001F1F3 CN 53"
+  - "\U0001F1E8\U0001F1F3 CN 54"
+  - "\U0001F1FA\U0001F1F8 US 55"
+  - "\U0001F1E8\U0001F1F3 CN 56"
+  - "\U0001F1FA\U0001F1F8 US 57"
+  - "\U0001F1E8\U0001F1F3 HK 58"
+  - "\U0001F1E8\U0001F1F3 CN 59"
+  - "\U0001F1E8\U0001F1F3 HK 60"
+  - "\U0001F1E8\U0001F1F3 CN 61"
+  - "\U0001F1FA\U0001F1F8 US 62"
+  - "\U0001F1E8\U0001F1F3 CN 63"
+  - "\U0001F1E8\U0001F1F3 CN 64"
+  - "\U0001F1E8\U0001F1F3 CN 65"
+  - "\U0001F1E8\U0001F1F3 CN 66"
+  - "\U0001F1E8\U0001F1F3 CN 67"
+  - "\U0001F1E8\U0001F1F3 CN 68"
+  - "\U0001F1E8\U0001F1F3 HK 69"
+  - "\U0001F1E8\U0001F1F3 CN 70"
+  - "\U0001F1E8\U0001F1F3 CN 71"
+  - "\U0001F1E8\U0001F1F3 CN 72"
+  - "\U0001F1E8\U0001F1F3 CN 73"
+  - "\U0001F1E8\U0001F1F3 CN 74"
+  - "\U0001F1E8\U0001F1F3 CN 75"
+  - "\U0001F1E8\U0001F1F3 CN 76"
+  - "\U0001F1E8\U0001F1F3 HK 77"
+  - "\U0001F1E8\U0001F1F3 CN 78"
+  - "\U0001F1E8\U0001F1F3 CN 79"
+  - "\U0001F1E8\U0001F1F3 CN 80"
+  - "\U0001F1E8\U0001F1F3 CN 81"
+  - "\U0001F1E8\U0001F1F3 CN 82"
+  - "\U0001F1E8\U0001F1F3 CN 83"
+  - "\U0001F1E8\U0001F1F3 CN 84"
+  - "\U0001F1E8\U0001F1F3 CN 85"
+  - "\U0001F1E8\U0001F1F3 CN 86"
+  - "\U0001F1E8\U0001F1F3 CN 87"
+  - "\U0001F1E8\U0001F1F3 CN 88"
+  - "\U0001F1E8\U0001F1F3 CN 89"
+  - "\U0001F1E8\U0001F1F3 CN 90"
+  - "\U0001F1E8\U0001F1F3 CN 91"
+  - "\U0001F1E8\U0001F1F3 CN 92"
+  - "\U0001F1E8\U0001F1F3 CN 93"
+  - "\U0001F1E8\U0001F1F3 CN 94"
+  - "\U0001F1E8\U0001F1F3 CN 95"
+  - "\U0001F1E8\U0001F1F3 CN 96"
+  - "\U0001F1E8\U0001F1F3 CN 97"
+  - "\U0001F1E8\U0001F1F3 CN 98"
+  - "\U0001F1E8\U0001F1F3 CN 99"
+  - "\U0001F1E8\U0001F1F3 CN 100"
+  - "\U0001F1E8\U0001F1F3 CN 101"
+  - "\U0001F1E8\U0001F1F3 CN 102"
+  - "\U0001F1E8\U0001F1F3 CN 103"
+  - "\U0001F1E8\U0001F1F3 CN 104"
+  - "\U0001F1E8\U0001F1F3 CN 105"
+  - "\U0001F1E8\U0001F1F3 CN 106"
+  - "\U0001F1E8\U0001F1F3 CN 107"
+  - "\U0001F1E8\U0001F1F3 CN 108"
+  - "\U0001F1E8\U0001F1F3 CN 109"
+  - "\U0001F1E8\U0001F1F3 CN 110"
+  - "\U0001F1E8\U0001F1F3 CN 111"
+  - "\U0001F1E8\U0001F1F3 CN 112"
+  - "\U0001F1E8\U0001F1F3 CN 113"
+  - "\U0001F1E8\U0001F1F3 CN 114"
+  - "\U0001F1E8\U0001F1F3 CN 115"
+  - "\U0001F1FA\U0001F1F8 US 116"
+  - "\U0001F1E8\U0001F1F3 CN 117"
+  - "\U0001F1E8\U0001F1F3 CN 118"
+  - "\U0001F1E8\U0001F1F3 CN 119"
+  - "\U0001F1E8\U0001F1F3 CN 120"
+  - "\U0001F1E8\U0001F1F3 CN 121"
+  - "\U0001F1E8\U0001F1F3 CN 122"
+  - "\U0001F1E8\U0001F1F3 CN 123"
+  - "\U0001F1E8\U0001F1F3 CN 124"
+  - "\U0001F1E8\U0001F1F3 CN 125"
+  - "\U0001F1E8\U0001F1F3 CN 126"
+  - "\U0001F1E8\U0001F1F3 CN 127"
+  - "\U0001F1E8\U0001F1F3 CN 128"
+  - "\U0001F1E8\U0001F1F3 CN 129"
+  - "\U0001F1E8\U0001F1F3 CN 130"
+  - "\U0001F1E8\U0001F1F3 CN 131"
+  - "\U0001F1E8\U0001F1F3 CN 132"
+  - "\U0001F1E8\U0001F1F3 CN 133"
+  - "\U0001F1E8\U0001F1F3 CN 134"
+  - "\U0001F1E8\U0001F1F3 CN 135"
+  - "\U0001F1E8\U0001F1F3 CN 136"
+  - "\U0001F1E8\U0001F1F3 CN 137"
+  - "\U0001F1E8\U0001F1F3 CN 138"
+  - "\U0001F1E8\U0001F1F3 CN 139"
+  - "\U0001F1E8\U0001F1F3 CN 140"
+  - "\U0001F1E8\U0001F1F3 CN 141"
+  - "\U0001F1E8\U0001F1F3 CN 142"
+  - "\U0001F1E8\U0001F1F3 CN 143"
+  - "\U0001F1E8\U0001F1F3 CN 144"
+  - "\U0001F1E8\U0001F1F3 HK 145"
+  - "\U0001F1E8\U0001F1F3 CN 146"
+  - "\U0001F1E8\U0001F1F3 CN 147"
+  - "\U0001F1E8\U0001F1F3 CN 148"
+  - "\U0001F1E8\U0001F1F3 CN 149"
+  - "\U0001F1E8\U0001F1F3 CN 150"
+  - "\U0001F1E8\U0001F1F3 CN 151"
+  - "\U0001F1E8\U0001F1F3 CN 152"
+  - "\U0001F1E8\U0001F1F3 CN 153"
+  - "\U0001F1E8\U0001F1F3 CN 154"
+  - "\U0001F1E8\U0001F1F3 CN 155"
+  - "\U0001F1E8\U0001F1F3 CN 156"
+  - "\U0001F1E8\U0001F1F3 CN 157"
+  - "\U0001F1E8\U0001F1F3 CN 158"
+  - "\U0001F1E8\U0001F1F3 CN 159"
+  - "\U0001F1E8\U0001F1F3 CN 160"
+  - "\U0001F1E8\U0001F1F3 HK 161"
+  - "\U0001F1E8\U0001F1F3 CN 162"
+  - "\U0001F1E8\U0001F1F3 CN 163"
+  - "\U0001F1E8\U0001F1F3 CN 164"
+  - "\U0001F1E8\U0001F1F3 CN 165"
+  - "\U0001F1E8\U0001F1F3 CN 166"
+  - "\U0001F1E8\U0001F1F3 CN 167"
+  - "\U0001F1E8\U0001F1F3 CN 168"
+  - "\U0001F1E8\U0001F1F3 CN 169"
+  - "\U0001F1E8\U0001F1F3 CN 170"
+  - "\U0001F1E8\U0001F1F3 CN 171"
+  - "\U0001F1E8\U0001F1F3 CN 172"
+  - "\U0001F1E8\U0001F1F3 CN 173"
+  - "\U0001F1E8\U0001F1F3 CN 174"
+  - "\U0001F1E8\U0001F1F3 CN 175"
+  - "\U0001F1E8\U0001F1F3 HK 176"
+  - "\U0001F1E8\U0001F1F3 CN 177"
+  - "\U0001F1E8\U0001F1F3 CN 178"
+  - "\U0001F1E8\U0001F1F3 CN 179"
+  - "\U0001F1E8\U0001F1F3 CN 180"
+  - "\U0001F1E8\U0001F1F3 CN 181"
+  - "\U0001F1E8\U0001F1F3 CN 182"
+  - "\U0001F1E8\U0001F1F3 CN 183"
+  - "\U0001F1E8\U0001F1F3 CN 184"
+  - "\U0001F1E8\U0001F1F3 CN 185"
+  - "\U0001F1E8\U0001F1F3 CN 186"
+  - "\U0001F1E8\U0001F1F3 CN 187"
+  - "\U0001F1E8\U0001F1F3 CN 188"
+  - "\U0001F1E8\U0001F1F3 CN 189"
+  - "\U0001F1E8\U0001F1F3 CN 190"
+  - "\U0001F1E8\U0001F1F3 CN 191"
+  - "\U0001F1E8\U0001F1F3 CN 192"
+  - "\U0001F1E8\U0001F1F3 CN 193"
+  - "\U0001F1E8\U0001F1F3 CN 194"
+  - "\U0001F1E8\U0001F1F3 CN 195"
+  - "\U0001F1E8\U0001F1F3 CN 196"
+  - "\U0001F1E8\U0001F1F3 CN 197"
+  - "\U0001F1E8\U0001F1F3 CN 198"
+  - "\U0001F1E8\U0001F1F3 CN 199"
+  - "\U0001F1E8\U0001F1F3 CN 200"
+  - "\U0001F1E8\U0001F1F3 CN 201"
+  - "\U0001F1E8\U0001F1F3 CN 202"
+  - "\U0001F1E8\U0001F1F3 CN 203"
+  - "\U0001F1E8\U0001F1F3 CN 204"
+  - "\U0001F1E8\U0001F1F3 CN 205"
+  - "\U0001F1E8\U0001F1F3 CN 206"
+  - "\U0001F1E8\U0001F1F3 CN 207"
+  - "\U0001F1E8\U0001F1F3 CN 208"
+  - "\U0001F1E8\U0001F1F3 CN 209"
+  - "\U0001F1E8\U0001F1F3 CN 210"
+  - "\U0001F1E8\U0001F1F3 CN 211"
+  - "\U0001F1E8\U0001F1F3 CN 212"
+  - "\U0001F1E8\U0001F1F3 CN 213"
+  - "\U0001F1E8\U0001F1F3 CN 214"
+  - "\U0001F1E8\U0001F1F3 CN 215"
+  - "\U0001F1E8\U0001F1F3 CN 216"
+  - "\U0001F1E8\U0001F1F3 CN 217"
+  - "\U0001F1E8\U0001F1F3 CN 218"
+  - "\U0001F1E8\U0001F1F3 CN 219"
+  - "\U0001F1E8\U0001F1F3 CN 220"
+  - "\U0001F1E8\U0001F1F3 CN 221"
+  - "\U0001F1E8\U0001F1F3 CN 222"
+  - "\U0001F1E8\U0001F1F3 CN 223"
+  - "\U0001F1E8\U0001F1F3 CN 224"
+  - "\U0001F1E8\U0001F1F3 HK 225"
+  - "\U0001F1E8\U0001F1F3 CN 226"
+  - "\U0001F1E8\U0001F1F3 CN 227"
+  - "\U0001F1E8\U0001F1F3 CN 228"
+  - "\U0001F1E8\U0001F1F3 CN 229"
+  - "\U0001F1E8\U0001F1F3 CN 230"
+  - "\U0001F1E8\U0001F1F3 CN 231"
+  - "\U0001F1FA\U0001F1F8 US 232"
+  - "\U0001F1FA\U0001F1F8 US 233"
+  - "\U0001F1FA\U0001F1F8 US 234"
+  - "\U0001F1FA\U0001F1F8 US 235"
+  - "\U0001F1E8\U0001F1F3 CN 236"
+  - "\U0001F1FA\U0001F1F8 US 237"
+  - "\U0001F1FA\U0001F1F8 US 238"
+  - "\U0001F1E8\U0001F1F3 CN 239"
+  - "\U0001F1E8\U0001F1F3 HK 240"
+  - "\U0001F1E8\U0001F1F3 HK 241"
+  - "\U0001F1E8\U0001F1F3 HK 242"
+  - "\U0001F1E8\U0001F1F3 HK 243"
+  - "\U0001F1EF\U0001F1F5 JP 244"
+  - "\U0001F1EF\U0001F1F5 JP 245"
+  - "\U0001F1E8\U0001F1F3 HK 246"
+  - "\U0001F1E8\U0001F1F3 HK 247"
+  - "\U0001F1E8\U0001F1F3 HK 248"
+  - "\U0001F1E8\U0001F1F3 CN 249"
+  - "\U0001F1E8\U0001F1F3 HK 250"
+  - "\U0001F1E8\U0001F1F3 CN 251"
+  - "\U0001F1FA\U0001F1F8 US 252"
+  - "\U0001F1E8\U0001F1F3 CN 253"
+  - "\U0001F1E8\U0001F1F3 HK 254"
+  - "\U0001F1E8\U0001F1F3 HK 255"
+  - "\U0001F1E8\U0001F1F3 HK 256"
+  - "\U0001F1EF\U0001F1F5 JP 257"
+  - "\U0001F1E8\U0001F1F3 HK 258"
+  - "\U0001F1E8\U0001F1F3 HK 259"
+  - "\U0001F1E8\U0001F1F3 HK 260"
+  - "\U0001F1E8\U0001F1F3 HK 261"
+  - "\U0001F1E8\U0001F1F3 HK 262"
+  - "\U0001F1E8\U0001F1F3 CN 263"
+  - "\U0001F1E8\U0001F1F3 CN 264"
+  - "\U0001F1E8\U0001F1F3 CN 265"
+  - "\U0001F1E8\U0001F1F3 HK 266"
+  - "\U0001F1E8\U0001F1F3 CN 267"
+  - "\U0001F1FA\U0001F1F8 US 268"
+  - "\U0001F1E8\U0001F1F3 CN 269"
+  - "\U0001F1E8\U0001F1F3 CN 270"
+  - "\U0001F1E8\U0001F1F3 HK 271"
+  - "\U0001F1E8\U0001F1F3 CN 272"
+  - "\U0001F1E8\U0001F1F3 CN 273"
+  - "\U0001F1E8\U0001F1F3 CN 274"
+  - "\U0001F1EF\U0001F1F5 JP 275"
+  - "\U0001F1F8\U0001F1EC SG 276"
+  - "\U0001F1E8\U0001F1F3 CN 277"
+  - "\U0001F1EF\U0001F1F5 JP 278"
+  - "\U0001F1FA\U0001F1F8 US 279"
+  - "\U0001F1EF\U0001F1F5 JP 280"
+  - "\U0001F1E8\U0001F1F3 CN 281"
+  - "\U0001F1EF\U0001F1F5 JP 282"
+  - "\U0001F1FA\U0001F1F8 US 283"
+  - "\U0001F1FA\U0001F1F8 US 284"
+  - "\U0001F1EF\U0001F1F5 JP 285"
+  - "\U0001F1E8\U0001F1F3 HK 286"
+  - "\U0001F1EF\U0001F1F5 JP 287"
+  - "\U0001F1EF\U0001F1F5 JP 288"
+  - "\U0001F1FA\U0001F1F8 US 289"
+  - "\U0001F1E8\U0001F1F3 CN 290"
+  - "\U0001F1E8\U0001F1F3 CN 291"
+  - "\U0001F1E8\U0001F1F3 CN 292"
+  - "\U0001F1FA\U0001F1F8 US 293"
+  - "\U0001F1E8\U0001F1F3 CN 294"
+  - "\U0001F1E8\U0001F1F3 CN 295"
+  - "\U0001F1E8\U0001F1F3 CN 296"
+  - "\U0001F1FA\U0001F1F8 US 297"
+  - "\U0001F1E8\U0001F1F3 CN 298"
+  - "\U0001F1E8\U0001F1F3 CN 299"
+  - "\U0001F1E8\U0001F1F3 CN 300"
+  - "\U0001F1E8\U0001F1F3 CN 301"
+  - "\U0001F1E8\U0001F1F3 CN 302"
+  - "\U0001F1E8\U0001F1F3 CN 303"
+  - "\U0001F1E8\U0001F1F3 CN 304"
+  - "\U0001F1E8\U0001F1F3 CN 305"
+  - "\U0001F1E8\U0001F1F3 CN 306"
+  - "\U0001F1E8\U0001F1F3 CN 307"
+  - "\U0001F1E8\U0001F1F3 CN 308"
+  - "\U0001F1E8\U0001F1F3 CN 309"
+  - "\U0001F1E8\U0001F1F3 CN 310"
+  - "\U0001F1E8\U0001F1F3 CN 311"
+  - "\U0001F1E8\U0001F1F3 CN 312"
+  - "\U0001F1E8\U0001F1F3 CN 313"
+  - "\U0001F1E8\U0001F1F3 CN 314"
+  - "\U0001F1E8\U0001F1F3 CN 315"
+  - "\U0001F1E8\U0001F1F3 CN 316"
+  - "\U0001F1E8\U0001F1F3 CN 317"
+  - "\U0001F1EF\U0001F1F5 JP 318"
+  - "\U0001F1E8\U0001F1F3 CN 319"
+  - "\U0001F1E8\U0001F1F3 CN 320"
+  - "\U0001F1E8\U0001F1F3 CN 321"
+  - "\U0001F1E8\U0001F1F3 CN 322"
+  - "\U0001F1E8\U0001F1F3 CN 323"
+  - "\U0001F1E8\U0001F1F3 CN 324"
+  - "\U0001F1E8\U0001F1F3 CN 325"
+  - "\U0001F1E8\U0001F1F3 CN 326"
+  - "\U0001F1E8\U0001F1F3 CN 327"
+  - "\U0001F1E8\U0001F1F3 CN 328"
+  - "\U0001F1E8\U0001F1F3 CN 329"
+  - "\U0001F1E8\U0001F1F3 CN 330"
+  - "\U0001F1E8\U0001F1F3 CN 331"
+  - "\U0001F1E8\U0001F1F3 CN 332"
+  - "\U0001F1E8\U0001F1F3 CN 333"
+  - "\U0001F1E8\U0001F1F3 CN 334"
+  - "\U0001F1E8\U0001F1F3 CN 335"
+  - "\U0001F1E8\U0001F1F3 CN 336"
+  - "\U0001F1E8\U0001F1F3 CN 337"
+  - "\U0001F1E8\U0001F1F3 CN 338"
+  - "\U0001F1E8\U0001F1F3 CN 339"
+  - "\U0001F1E8\U0001F1F3 CN 340"
+  - "\U0001F1E8\U0001F1F3 CN 341"
+  - "\U0001F1E8\U0001F1F3 CN 342"
+  - "\U0001F1E8\U0001F1F3 CN 343"
+  - "\U0001F1E8\U0001F1F3 CN 344"
+  - "\U0001F1E8\U0001F1F3 CN 345"
+  - "\U0001F1E8\U0001F1F3 CN 346"
+  - "\U0001F1E8\U0001F1F3 CN 347"
+  - "\U0001F1E8\U0001F1F3 CN 348"
+  - "\U0001F1E8\U0001F1F3 CN 349"
+  - "\U0001F1E8\U0001F1F3 CN 350"
+  - "\U0001F1E8\U0001F1F3 CN 351"
+  - "\U0001F1E8\U0001F1F3 CN 352"
+  - "\U0001F1E8\U0001F1F3 CN 353"
+  - "\U0001F1E8\U0001F1F3 CN 354"
+  - "\U0001F1E8\U0001F1F3 CN 355"
+  - "\U0001F1E8\U0001F1F3 CN 356"
+  - "\U0001F1E8\U0001F1F3 CN 357"
+  - "\U0001F1E8\U0001F1F3 CN 358"
+  - "\U0001F1E8\U0001F1F3 CN 359"
+  - "\U0001F1E8\U0001F1F3 CN 360"
+  - "\U0001F1E8\U0001F1F3 CN 361"
+  - "\U0001F1E8\U0001F1F3 CN 362"
+  - "\U0001F1E8\U0001F1F3 CN 363"
+  - "\U0001F1E8\U0001F1F3 CN 364"
+  - "\U0001F1E8\U0001F1F3 CN 365"
+  - "\U0001F1E8\U0001F1F3 CN 366"
+  - "\U0001F1E8\U0001F1F3 CN 367"
+  - "\U0001F1E8\U0001F1F3 CN 368"
+  - "\U0001F1E8\U0001F1F3 CN 369"
+  - "\U0001F1E8\U0001F1F3 CN 370"
+  - "\U0001F1E8\U0001F1F3 CN 371"
+  - "\U0001F1E8\U0001F1F3 CN 372"
+  - "\U0001F1E8\U0001F1F3 CN 373"
+  - "\U0001F1E8\U0001F1F3 CN 374"
+  - "\U0001F1E8\U0001F1F3 CN 375"
+  - "\U0001F1E8\U0001F1F3 CN 376"
+  - "\U0001F1E8\U0001F1F3 CN 377"
+  - "\U0001F1E8\U0001F1F3 CN 378"
+  - "\U0001F1E8\U0001F1F3 CN 379"
+  - "\U0001F1E8\U0001F1F3 CN 380"
+  - "\U0001F1E8\U0001F1F3 CN 381"
+  - "\U0001F1E8\U0001F1F3 CN 382"
+  - "\U0001F1E8\U0001F1F3 CN 383"
+  - "\U0001F1E8\U0001F1F3 CN 384"
+  - "\U0001F1E8\U0001F1F3 CN 385"
+  - "\U0001F1E8\U0001F1F3 CN 386"
+  - "\U0001F1E8\U0001F1F3 CN 387"
+  - "\U0001F1E8\U0001F1F3 CN 388"
+  - "\U0001F1E8\U0001F1F3 CN 389"
+  - "\U0001F1E8\U0001F1F3 CN 390"
+  - "\U0001F1E8\U0001F1F3 CN 391"
+  - "\U0001F1E8\U0001F1F3 CN 392"
+  - "\U0001F1E8\U0001F1F3 CN 393"
+  - "\U0001F1E8\U0001F1F3 CN 394"
+  - "\U0001F1E8\U0001F1F3 CN 395"
+  - "\U0001F1E8\U0001F1F3 CN 396"
+  - "\U0001F1E8\U0001F1F3 CN 397"
+  - "\U0001F1E8\U0001F1F3 CN 398"
+  - "\U0001F1E8\U0001F1F3 CN 399"
+  - "\U0001F1E8\U0001F1F3 CN 400"
+  - "\U0001F1E8\U0001F1F3 CN 401"
+  - "\U0001F1E8\U0001F1F3 CN 402"
+  - "\U0001F1E8\U0001F1F3 CN 403"
+  - "\U0001F1E8\U0001F1F3 CN 404"
+  - "\U0001F1E8\U0001F1F3 CN 405"
+  - "\U0001F1E8\U0001F1F3 CN 406"
+  - "\U0001F1E8\U0001F1F3 CN 407"
+  - "\U0001F1E8\U0001F1F3 CN 408"
+  - "\U0001F1E8\U0001F1F3 CN 409"
+  - "\U0001F1E8\U0001F1F3 CN 410"
+  - "\U0001F1E8\U0001F1F3 CN 411"
+  - "\U0001F1E8\U0001F1F3 CN 412"
+  - "\U0001F1E8\U0001F1F3 CN 413"
+  - "\U0001F1E8\U0001F1F3 CN 414"
+  - "\U0001F1E8\U0001F1F3 CN 415"
+  - "\U0001F1E8\U0001F1F3 CN 416"
+  - "\U0001F1E8\U0001F1F3 CN 417"
+  - "\U0001F1E8\U0001F1F3 CN 418"
+  - "\U0001F1E8\U0001F1F3 CN 419"
+  - "\U0001F1E8\U0001F1F3 CN 420"
+  - "\U0001F1E8\U0001F1F3 CN 421"
+  - "\U0001F1E8\U0001F1F3 CN 422"
+  - "\U0001F1E8\U0001F1F3 CN 423"
+  - "\U0001F1E8\U0001F1F3 CN 424"
+  - "\U0001F1E8\U0001F1F3 CN 425"
+  - "\U0001F1E8\U0001F1F3 CN 426"
+  - "\U0001F1E8\U0001F1F3 CN 427"
+  - "\U0001F1E8\U0001F1F3 CN 428"
+  - "\U0001F1E8\U0001F1F3 CN 429"
+  - "\U0001F1E8\U0001F1F3 CN 430"
+  - "\U0001F1E8\U0001F1F3 CN 431"
+  - "\U0001F1E8\U0001F1F3 CN 432"
+  - "\U0001F1E8\U0001F1F3 CN 433"
+  - "\U0001F1E8\U0001F1F3 CN 434"
+  - "\U0001F1E8\U0001F1F3 CN 435"
+  - "\U0001F1E8\U0001F1F3 CN 436"
+  - "\U0001F1E8\U0001F1F3 CN 437"
+  - "\U0001F1E8\U0001F1F3 CN 438"
+  - "\U0001F1E8\U0001F1F3 CN 439"
+  - "\U0001F1E8\U0001F1F3 CN 440"
+  - "\U0001F1E8\U0001F1F3 CN 441"
+  - "\U0001F1E8\U0001F1F3 CN 442"
+  - "\U0001F1E8\U0001F1F3 HK 443"
+  - "\U0001F1E8\U0001F1F3 HK 444"
+  - "\U0001F1E8\U0001F1F3 CN 445"
+  - "\U0001F1E8\U0001F1F3 HK 446"
+  - "\U0001F1E8\U0001F1F3 CN 447"
+  - "\U0001F1E8\U0001F1F3 CN 448"
+  - "\U0001F1E8\U0001F1F3 CN 449"
+  - "\U0001F1E8\U0001F1F3 CN 450"
+  - "\U0001F1E8\U0001F1F3 CN 451"
+  - "\U0001F1E8\U0001F1F3 CN 452"
+  - "\U0001F1E8\U0001F1F3 CN 453"
+  - "\U0001F1E8\U0001F1F3 CN 454"
+  - "\U0001F1E8\U0001F1F3 CN 455"
+  - "\U0001F1E8\U0001F1F3 CN 456"
+  - "\U0001F1E8\U0001F1F3 CN 457"
+  - "\U0001F1F0\U0001F1F7 KR 458"
+  - "\U0001F1EF\U0001F1F5 JP 459"
+  - "\U0001F1E8\U0001F1F3 CN 460"
+  - "\U0001F1E8\U0001F1F3 CN 461"
+  - "\U0001F1E8\U0001F1F3 CN 462"
+  - "\U0001F1E8\U0001F1F3 CN 463"
+  - "\U0001F1E8\U0001F1F3 CN 464"
+  - "\U0001F1E8\U0001F1F3 CN 465"
+  - "\U0001F1FA\U0001F1F8 US 466"
+  - "\U0001F1E8\U0001F1F3 CN 467"
+  - "\U0001F1E8\U0001F1F3 CN 468"
+  - "\U0001F1E8\U0001F1F3 CN 469"
+  - "\U0001F1E8\U0001F1F3 CN 470"
+  - "\U0001F1E8\U0001F1F3 CN 471"
+  - "\U0001F1E8\U0001F1F3 CN 472"
+  - "\U0001F1E8\U0001F1F3 CN 473"
+  - "\U0001F1E8\U0001F1F3 CN 474"
+  - "\U0001F1E8\U0001F1F3 CN 475"
+  - "\U0001F1EF\U0001F1F5 JP 476"
+  - "\U0001F1E8\U0001F1F3 CN 477"
+  - "\U0001F1E8\U0001F1F3 CN 478"
+  - "\U0001F1EF\U0001F1F5 JP 479"
+  - "\U0001F1E8\U0001F1F3 HK 480"
+  - "\U0001F1E8\U0001F1F3 HK 481"
+  - "\U0001F1E8\U0001F1F3 CN 482"
+  - "\U0001F1F8\U0001F1EC SG 483"
+  - "\U0001F1E8\U0001F1F3 CN 484"
+  - "\U0001F1E8\U0001F1F3 HK 485"
+  - "\U0001F1E8\U0001F1F3 HK 486"
+  - "\U0001F1E8\U0001F1F3 CN 487"
+  - "\U0001F1E8\U0001F1F3 CN 488"
+  - "\U0001F1E8\U0001F1F3 CN 489"
+  - "\U0001F1E8\U0001F1F3 CN 490"
+  - "\U0001F1E8\U0001F1F3 HK 491"
+  - "\U0001F1E8\U0001F1F3 CN 492"
+  - "\U0001F1E8\U0001F1F3 CN 493"
+  - "\U0001F1E8\U0001F1F3 CN 494"
+  - "\U0001F1E8\U0001F1F3 CN 495"
+  - "\U0001F1E8\U0001F1F3 CN 496"
+  - "\U0001F1E8\U0001F1F3 CN 497"
+  - "\U0001F1E8\U0001F1F3 CN 498"
+  - "\U0001F1E8\U0001F1F3 CN 499"
+  - "\U0001F1E8\U0001F1F3 CN 500"
+  - "\U0001F1E8\U0001F1F3 CN 501"
+  - "\U0001F1FA\U0001F1F8 US 502"
+  - "\U0001F1E8\U0001F1F3 CN 503"
+  - "\U0001F1E6\U0001F1FA AU 504"
+  - "\U0001F1E8\U0001F1F3 HK 505"
+  - "\U0001F1FA\U0001F1F8 US 506"
+  - "\U0001F1FA\U0001F1F8 US 507"
+  - "\U0001F1FA\U0001F1F8 US 508"
+rules:
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,Proxy
+- DOMAIN-SUFFIX,digicert.com,Proxy
+- DOMAIN,ocsp.apple.com,Proxy
+- DOMAIN,ocsp.comodoca.com,Proxy
+- DOMAIN,ocsp.usertrust.com,Proxy
+- DOMAIN,ocsp.sectigo.com,Proxy
+- DOMAIN,ocsp.verisign.net,Proxy
+- DOMAIN-SUFFIX,apple-dns.net,Proxy
+- DOMAIN,testflight.apple.com,Proxy
+- DOMAIN,sandbox.itunes.apple.com,Proxy
+- DOMAIN,itunes.apple.com,Proxy
+- DOMAIN-SUFFIX,apps.apple.com,Proxy
+- DOMAIN-SUFFIX,blobstore.apple.com,Proxy
+- DOMAIN,cvws.icloud-content.com,Proxy
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,Proxy
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,Proxy
+- DOMAIN-KEYWORD,google,Proxy
+- DOMAIN-KEYWORD,gmail,Proxy
+- DOMAIN-KEYWORD,youtube,Proxy
+- DOMAIN-KEYWORD,facebook,Proxy
+- DOMAIN-SUFFIX,fb.me,Proxy
+- DOMAIN-SUFFIX,fbcdn.net,Proxy
+- DOMAIN-KEYWORD,twitter,Proxy
+- DOMAIN-KEYWORD,instagram,Proxy
+- DOMAIN-KEYWORD,dropbox,Proxy
+- DOMAIN-SUFFIX,twimg.com,Proxy
+- DOMAIN-KEYWORD,blogspot,Proxy
+- DOMAIN-SUFFIX,youtu.be,Proxy
+- DOMAIN-KEYWORD,whatsapp,Proxy
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,Proxy
+- DOMAIN-SUFFIX,abpchina.org,Proxy
+- DOMAIN-SUFFIX,adblockplus.org,Proxy
+- DOMAIN-SUFFIX,adobe.com,Proxy
+- DOMAIN-SUFFIX,akamaized.net,Proxy
+- DOMAIN-SUFFIX,alfredapp.com,Proxy
+- DOMAIN-SUFFIX,amplitude.com,Proxy
+- DOMAIN-SUFFIX,ampproject.org,Proxy
+- DOMAIN-SUFFIX,android.com,Proxy
+- DOMAIN-SUFFIX,angularjs.org,Proxy
+- DOMAIN-SUFFIX,aolcdn.com,Proxy
+- DOMAIN-SUFFIX,apkpure.com,Proxy
+- DOMAIN-SUFFIX,appledaily.com,Proxy
+- DOMAIN-SUFFIX,appshopper.com,Proxy
+- DOMAIN-SUFFIX,appspot.com,Proxy
+- DOMAIN-SUFFIX,arcgis.com,Proxy
+- DOMAIN-SUFFIX,archive.org,Proxy
+- DOMAIN-SUFFIX,armorgames.com,Proxy
+- DOMAIN-SUFFIX,aspnetcdn.com,Proxy
+- DOMAIN-SUFFIX,att.com,Proxy
+- DOMAIN-SUFFIX,awsstatic.com,Proxy
+- DOMAIN-SUFFIX,azureedge.net,Proxy
+- DOMAIN-SUFFIX,azurewebsites.net,Proxy
+- DOMAIN-SUFFIX,bing.com,Proxy
+- DOMAIN-SUFFIX,bintray.com,Proxy
+- DOMAIN-SUFFIX,bit.com,Proxy
+- DOMAIN-SUFFIX,bit.ly,Proxy
+- DOMAIN-SUFFIX,bitbucket.org,Proxy
+- DOMAIN-SUFFIX,bjango.com,Proxy
+- DOMAIN-SUFFIX,bkrtx.com,Proxy
+- DOMAIN-SUFFIX,blog.com,Proxy
+- DOMAIN-SUFFIX,blogcdn.com,Proxy
+- DOMAIN-SUFFIX,blogger.com,Proxy
+- DOMAIN-SUFFIX,blogsmithmedia.com,Proxy
+- DOMAIN-SUFFIX,blogspot.com,Proxy
+- DOMAIN-SUFFIX,blogspot.hk,Proxy
+- DOMAIN-SUFFIX,bloomberg.com,Proxy
+- DOMAIN-SUFFIX,box.com,Proxy
+- DOMAIN-SUFFIX,box.net,Proxy
+- DOMAIN-SUFFIX,cachefly.net,Proxy
+- DOMAIN-SUFFIX,chromium.org,Proxy
+- DOMAIN-SUFFIX,cl.ly,Proxy
+- DOMAIN-SUFFIX,cloudflare.com,Proxy
+- DOMAIN-SUFFIX,cloudfront.net,Proxy
+- DOMAIN-SUFFIX,cloudmagic.com,Proxy
+- DOMAIN-SUFFIX,cmail19.com,Proxy
+- DOMAIN-SUFFIX,cnet.com,Proxy
+- DOMAIN-SUFFIX,cocoapods.org,Proxy
+- DOMAIN-SUFFIX,comodoca.com,Proxy
+- DOMAIN-SUFFIX,crashlytics.com,Proxy
+- DOMAIN-SUFFIX,culturedcode.com,Proxy
+- DOMAIN-SUFFIX,d.pr,Proxy
+- DOMAIN-SUFFIX,danilo.to,Proxy
+- DOMAIN-SUFFIX,dayone.me,Proxy
+- DOMAIN-SUFFIX,db.tt,Proxy
+- DOMAIN-SUFFIX,deskconnect.com,Proxy
+- DOMAIN-SUFFIX,disq.us,Proxy
+- DOMAIN-SUFFIX,disqus.com,Proxy
+- DOMAIN-SUFFIX,disquscdn.com,Proxy
+- DOMAIN-SUFFIX,dnsimple.com,Proxy
+- DOMAIN-SUFFIX,docker.com,Proxy
+- DOMAIN-SUFFIX,dribbble.com,Proxy
+- DOMAIN-SUFFIX,droplr.com,Proxy
+- DOMAIN-SUFFIX,duckduckgo.com,Proxy
+- DOMAIN-SUFFIX,dueapp.com,Proxy
+- DOMAIN-SUFFIX,dytt8.net,Proxy
+- DOMAIN-SUFFIX,edgecastcdn.net,Proxy
+- DOMAIN-SUFFIX,edgekey.net,Proxy
+- DOMAIN-SUFFIX,edgesuite.net,Proxy
+- DOMAIN-SUFFIX,engadget.com,Proxy
+- DOMAIN-SUFFIX,entrust.net,Proxy
+- DOMAIN-SUFFIX,eurekavpt.com,Proxy
+- DOMAIN-SUFFIX,evernote.com,Proxy
+- DOMAIN-SUFFIX,fabric.io,Proxy
+- DOMAIN-SUFFIX,fast.com,Proxy
+- DOMAIN-SUFFIX,fastly.net,Proxy
+- DOMAIN-SUFFIX,fc2.com,Proxy
+- DOMAIN-SUFFIX,feedburner.com,Proxy
+- DOMAIN-SUFFIX,feedly.com,Proxy
+- DOMAIN-SUFFIX,feedsportal.com,Proxy
+- DOMAIN-SUFFIX,fiftythree.com,Proxy
+- DOMAIN-SUFFIX,firebaseio.com,Proxy
+- DOMAIN-SUFFIX,flexibits.com,Proxy
+- DOMAIN-SUFFIX,flickr.com,Proxy
+- DOMAIN-SUFFIX,flipboard.com,Proxy
+- DOMAIN-SUFFIX,g.co,Proxy
+- DOMAIN-SUFFIX,gabia.net,Proxy
+- DOMAIN-SUFFIX,geni.us,Proxy
+- DOMAIN-SUFFIX,gfx.ms,Proxy
+- DOMAIN-SUFFIX,ggpht.com,Proxy
+- DOMAIN-SUFFIX,ghostnoteapp.com,Proxy
+- DOMAIN-SUFFIX,git.io,Proxy
+- DOMAIN-KEYWORD,github,Proxy
+- DOMAIN-SUFFIX,globalsign.com,Proxy
+- DOMAIN-SUFFIX,gmodules.com,Proxy
+- DOMAIN-SUFFIX,godaddy.com,Proxy
+- DOMAIN-SUFFIX,golang.org,Proxy
+- DOMAIN-SUFFIX,gongm.in,Proxy
+- DOMAIN-SUFFIX,goo.gl,Proxy
+- DOMAIN-SUFFIX,goodreaders.com,Proxy
+- DOMAIN-SUFFIX,goodreads.com,Proxy
+- DOMAIN-SUFFIX,gravatar.com,Proxy
+- DOMAIN-SUFFIX,gstatic.com,Proxy
+- DOMAIN-SUFFIX,gvt0.com,Proxy
+- DOMAIN-SUFFIX,hockeyapp.net,Proxy
+- DOMAIN-SUFFIX,hotmail.com,Proxy
+- DOMAIN-SUFFIX,icons8.com,Proxy
+- DOMAIN-SUFFIX,ifixit.com,Proxy
+- DOMAIN-SUFFIX,ift.tt,Proxy
+- DOMAIN-SUFFIX,ifttt.com,Proxy
+- DOMAIN-SUFFIX,iherb.com,Proxy
+- DOMAIN-SUFFIX,imageshack.us,Proxy
+- DOMAIN-SUFFIX,img.ly,Proxy
+- DOMAIN-SUFFIX,imgur.com,Proxy
+- DOMAIN-SUFFIX,imore.com,Proxy
+- DOMAIN-SUFFIX,instapaper.com,Proxy
+- DOMAIN-SUFFIX,ipn.li,Proxy
+- DOMAIN-SUFFIX,is.gd,Proxy
+- DOMAIN-SUFFIX,issuu.com,Proxy
+- DOMAIN-SUFFIX,itgonglun.com,Proxy
+- DOMAIN-SUFFIX,itun.es,Proxy
+- DOMAIN-SUFFIX,ixquick.com,Proxy
+- DOMAIN-SUFFIX,j.mp,Proxy
+- DOMAIN-SUFFIX,js.revsci.net,Proxy
+- DOMAIN-SUFFIX,jshint.com,Proxy
+- DOMAIN-SUFFIX,jtvnw.net,Proxy
+- DOMAIN-SUFFIX,justgetflux.com,Proxy
+- DOMAIN-SUFFIX,kat.cr,Proxy
+- DOMAIN-SUFFIX,klip.me,Proxy
+- DOMAIN-SUFFIX,libsyn.com,Proxy
+- DOMAIN-SUFFIX,linkedin.com,Proxy
+- DOMAIN-SUFFIX,linode.com,Proxy
+- DOMAIN-SUFFIX,lithium.com,Proxy
+- DOMAIN-SUFFIX,littlehj.com,Proxy
+- DOMAIN-SUFFIX,live.com,Proxy
+- DOMAIN-SUFFIX,live.net,Proxy
+- DOMAIN-SUFFIX,livefilestore.com,Proxy
+- DOMAIN-SUFFIX,llnwd.net,Proxy
+- DOMAIN-SUFFIX,macid.co,Proxy
+- DOMAIN-SUFFIX,macromedia.com,Proxy
+- DOMAIN-SUFFIX,macrumors.com,Proxy
+- DOMAIN-SUFFIX,mashable.com,Proxy
+- DOMAIN-SUFFIX,mathjax.org,Proxy
+- DOMAIN-SUFFIX,medium.com,Proxy
+- DOMAIN-SUFFIX,mega.co.nz,Proxy
+- DOMAIN-SUFFIX,mega.nz,Proxy
+- DOMAIN-SUFFIX,megaupload.com,Proxy
+- DOMAIN-SUFFIX,microsofttranslator.com,Proxy
+- DOMAIN-SUFFIX,mindnode.com,Proxy
+- DOMAIN-SUFFIX,mobile01.com,Proxy
+- DOMAIN-SUFFIX,modmyi.com,Proxy
+- DOMAIN-SUFFIX,msedge.net,Proxy
+- DOMAIN-SUFFIX,myfontastic.com,Proxy
+- DOMAIN-SUFFIX,name.com,Proxy
+- DOMAIN-SUFFIX,nextmedia.com,Proxy
+- DOMAIN-SUFFIX,nsstatic.net,Proxy
+- DOMAIN-SUFFIX,nssurge.com,Proxy
+- DOMAIN-SUFFIX,nyt.com,Proxy
+- DOMAIN-SUFFIX,nytimes.com,Proxy
+- DOMAIN-SUFFIX,omnigroup.com,Proxy
+- DOMAIN-SUFFIX,onedrive.com,Proxy
+- DOMAIN-SUFFIX,onenote.com,Proxy
+- DOMAIN-SUFFIX,ooyala.com,Proxy
+- DOMAIN-SUFFIX,openvpn.net,Proxy
+- DOMAIN-SUFFIX,openwrt.org,Proxy
+- DOMAIN-SUFFIX,orkut.com,Proxy
+- DOMAIN-SUFFIX,osxdaily.com,Proxy
+- DOMAIN-SUFFIX,outlook.com,Proxy
+- DOMAIN-SUFFIX,ow.ly,Proxy
+- DOMAIN-SUFFIX,paddleapi.com,Proxy
+- DOMAIN-SUFFIX,parallels.com,Proxy
+- DOMAIN-SUFFIX,parse.com,Proxy
+- DOMAIN-SUFFIX,pdfexpert.com,Proxy
+- DOMAIN-SUFFIX,periscope.tv,Proxy
+- DOMAIN-SUFFIX,pinboard.in,Proxy
+- DOMAIN-SUFFIX,pinterest.com,Proxy
+- DOMAIN-SUFFIX,pixelmator.com,Proxy
+- DOMAIN-SUFFIX,pixiv.net,Proxy
+- DOMAIN-SUFFIX,playpcesor.com,Proxy
+- DOMAIN-SUFFIX,playstation.com,Proxy
+- DOMAIN-SUFFIX,playstation.com.hk,Proxy
+- DOMAIN-SUFFIX,playstation.net,Proxy
+- DOMAIN-SUFFIX,playstationnetwork.com,Proxy
+- DOMAIN-SUFFIX,pushwoosh.com,Proxy
+- DOMAIN-SUFFIX,rime.im,Proxy
+- DOMAIN-SUFFIX,servebom.com,Proxy
+- DOMAIN-SUFFIX,sfx.ms,Proxy
+- DOMAIN-SUFFIX,shadowsocks.org,Proxy
+- DOMAIN-SUFFIX,sharethis.com,Proxy
+- DOMAIN-SUFFIX,shazam.com,Proxy
+- DOMAIN-SUFFIX,skype.com,Proxy
+- DOMAIN-SUFFIX,smartdnsProxy.com,Proxy
+- DOMAIN-SUFFIX,smartmailcloud.com,Proxy
+- DOMAIN-SUFFIX,sndcdn.com,Proxy
+- DOMAIN-SUFFIX,sony.com,Proxy
+- DOMAIN-SUFFIX,soundcloud.com,Proxy
+- DOMAIN-SUFFIX,sourceforge.net,Proxy
+- DOMAIN-SUFFIX,spotify.com,Proxy
+- DOMAIN-SUFFIX,squarespace.com,Proxy
+- DOMAIN-SUFFIX,sstatic.net,Proxy
+- DOMAIN-SUFFIX,st.luluku.pw,Proxy
+- DOMAIN-SUFFIX,stackoverflow.com,Proxy
+- DOMAIN-SUFFIX,startpage.com,Proxy
+- DOMAIN-SUFFIX,staticflickr.com,Proxy
+- DOMAIN-SUFFIX,steamcommunity.com,Proxy
+- DOMAIN-SUFFIX,symauth.com,Proxy
+- DOMAIN-SUFFIX,symcb.com,Proxy
+- DOMAIN-SUFFIX,symcd.com,Proxy
+- DOMAIN-SUFFIX,tapbots.com,Proxy
+- DOMAIN-SUFFIX,tapbots.net,Proxy
+- DOMAIN-SUFFIX,tdesktop.com,Proxy
+- DOMAIN-SUFFIX,techcrunch.com,Proxy
+- DOMAIN-SUFFIX,techsmith.com,Proxy
+- DOMAIN-SUFFIX,thepiratebay.org,Proxy
+- DOMAIN-SUFFIX,theverge.com,Proxy
+- DOMAIN-SUFFIX,time.com,Proxy
+- DOMAIN-SUFFIX,timeinc.net,Proxy
+- DOMAIN-SUFFIX,tiny.cc,Proxy
+- DOMAIN-SUFFIX,tinypic.com,Proxy
+- DOMAIN-SUFFIX,tmblr.co,Proxy
+- DOMAIN-SUFFIX,todoist.com,Proxy
+- DOMAIN-SUFFIX,trello.com,Proxy
+- DOMAIN-SUFFIX,trustasiassl.com,Proxy
+- DOMAIN-SUFFIX,tumblr.co,Proxy
+- DOMAIN-SUFFIX,tumblr.com,Proxy
+- DOMAIN-SUFFIX,tweetdeck.com,Proxy
+- DOMAIN-SUFFIX,tweetmarker.net,Proxy
+- DOMAIN-SUFFIX,twitch.tv,Proxy
+- DOMAIN-SUFFIX,txmblr.com,Proxy
+- DOMAIN-SUFFIX,typekit.net,Proxy
+- DOMAIN-SUFFIX,ubertags.com,Proxy
+- DOMAIN-SUFFIX,ublock.org,Proxy
+- DOMAIN-SUFFIX,ubnt.com,Proxy
+- DOMAIN-SUFFIX,ulyssesapp.com,Proxy
+- DOMAIN-SUFFIX,urchin.com,Proxy
+- DOMAIN-SUFFIX,usertrust.com,Proxy
+- DOMAIN-SUFFIX,v.gd,Proxy
+- DOMAIN-SUFFIX,v2ex.com,Proxy
+- DOMAIN-SUFFIX,vimeo.com,Proxy
+- DOMAIN-SUFFIX,vimeocdn.com,Proxy
+- DOMAIN-SUFFIX,vine.co,Proxy
+- DOMAIN-SUFFIX,vivaldi.com,Proxy
+- DOMAIN-SUFFIX,vox-cdn.com,Proxy
+- DOMAIN-SUFFIX,vsco.co,Proxy
+- DOMAIN-SUFFIX,vultr.com,Proxy
+- DOMAIN-SUFFIX,w.org,Proxy
+- DOMAIN-SUFFIX,w3schools.com,Proxy
+- DOMAIN-SUFFIX,webtype.com,Proxy
+- DOMAIN-SUFFIX,wikiwand.com,Proxy
+- DOMAIN-SUFFIX,wikileaks.org,Proxy
+- DOMAIN-SUFFIX,wikimedia.org,Proxy
+- DOMAIN-SUFFIX,wikipedia.com,Proxy
+- DOMAIN-SUFFIX,wikipedia.org,Proxy
+- DOMAIN-SUFFIX,windows.com,Proxy
+- DOMAIN-SUFFIX,windows.net,Proxy
+- DOMAIN-SUFFIX,wire.com,Proxy
+- DOMAIN-SUFFIX,wordpress.com,Proxy
+- DOMAIN-SUFFIX,workflowy.com,Proxy
+- DOMAIN-SUFFIX,wp.com,Proxy
+- DOMAIN-SUFFIX,wsj.com,Proxy
+- DOMAIN-SUFFIX,wsj.net,Proxy
+- DOMAIN-SUFFIX,xda-developers.com,Proxy
+- DOMAIN-SUFFIX,xeeno.com,Proxy
+- DOMAIN-SUFFIX,xiti.com,Proxy
+- DOMAIN-SUFFIX,yahoo.com,Proxy
+- DOMAIN-SUFFIX,yimg.com,Proxy
+- DOMAIN-SUFFIX,ying.com,Proxy
+- DOMAIN-SUFFIX,yoyo.org,Proxy
+- DOMAIN-SUFFIX,ytimg.com,Proxy
+- DOMAIN-SUFFIX,telegra.ph,Proxy
+- DOMAIN-SUFFIX,telegram.org,Proxy
+- IP-CIDR,91.108.4.0/22,Proxy
+- IP-CIDR,91.108.8.0/21,Proxy
+- IP-CIDR,91.108.16.0/22,Proxy
+- IP-CIDR,91.108.56.0/22,Proxy
+- IP-CIDR,149.154.160.0/20,Proxy
+- IP-CIDR6,2001:67c:4e8::/48,Proxy
+- IP-CIDR6,2001:b28:f23d::/48,Proxy
+- IP-CIDR6,2001:b28:f23f::/48,Proxy
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,Proxy
