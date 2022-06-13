@@ -79,8 +79,15 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- name: "\U0001F1FA\U0001F1F8 US 1"
+  server: 107.148.23.159
+  port: 26969
+  type: trojan
+  password: 1f316deb-02e7-4050-acd9-abcb3942fd37
+  skip-cert-verify: true
+  udp: true
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 1"
+  name: "\U0001F1E8\U0001F1F3 CN 2"
   server: 120.232.190.86
   port: 11803
   protocol: auth_aes128_sha1
@@ -90,7 +97,7 @@ proxies:
   obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=
   protocol-param: 13370:DqGDfE
 - type: ssr
-  name: "\U0001F1E8\U0001F1F3 CN 2"
+  name: "\U0001F1E8\U0001F1F3 CN 3"
   server: 36.138.176.120
   port: 48602
   protocol: auth_aes128_sha1
@@ -98,20 +105,34 @@ proxies:
   obfs: http_simple
   password: GjRQkK
   protocol-param: 1062:tLkKEk
+- type: ssr
+  name: "\U0001F1E8\U0001F1F3 CN 4"
+  server: 120.233.185.189
+  port: 11846
+  protocol: auth_aes128_sha1
+  cipher: chacha20-ietf
+  obfs: tls1.2_ticket_auth
+  password: Fhbe0z
+  obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=
+  protocol-param: 13370:DqGDfE
 proxy-groups:
 - name: automatic
   type: url-test
   proxies:
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: Proxy
   type: select
   proxies:
   - automatic
-  - "\U0001F1E8\U0001F1F3 CN 1"
+  - "\U0001F1FA\U0001F1F8 US 1"
   - "\U0001F1E8\U0001F1F3 CN 2"
+  - "\U0001F1E8\U0001F1F3 CN 3"
+  - "\U0001F1E8\U0001F1F3 CN 4"
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
