@@ -1,2 +1,2 @@
-停止更新
-请转战 https://openit.ml
+# Freeray
+免费节点，不定时更新
